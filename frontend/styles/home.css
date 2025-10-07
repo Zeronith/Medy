@@ -370,3 +370,26 @@ hr {
     font-size: 36px;
   }
 }
+
+/*sidebar and feed*/
+main {
+  display: grid;
+  grid-template-columns: 7fr 3fr; /* 70% feed / 30% sidebar */
+  gap: 40px;
+  margin: 0 80px;
+  min-height: calc(100vh - 60px);
+  align-items: start;
+}
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 70px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medy – Home</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <nav>
+          <div class="left-nav">
+            <div class="logo">
+              <svg id="medy-logo" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5"
+                      d="M12 20.0283V18H8L8 20.0283C8 20.3054 8 20.444 8.09485 20.5C8.18971 20.556 8.31943 20.494 8.57888 20.3701L9.82112 19.7766C9.9089 19.7347 9.95279 19.7138 10 19.7138C10.0472 19.7138 10.0911 19.7347 10.1789 19.7767L11.4211 20.3701C11.6806 20.494 11.8103 20.556 11.9051 20.5C12 20.444 12 20.3054 12 20.0283Z"
+                      fill="#1C274D"/>
+              </svg>
+              <span id="logo-txt">MEDY</span>
+            </div>
+            <button class="nav-btn">Асуулт асуух</button>
+            <button class="nav-btn">Миний класс</button>
+          </div>
+
+          <div class="right-nav">
+            <div class="balance-container">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="#333" stroke-width="1.5"/>
+                <path d="M12 8V16M9 12H15"
+                      stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span id="balance">8969</span>
+            </div>
+            <button class="theme-toggle">🌙</button>
+            <div class="profile">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="8" r="4" stroke="#333" stroke-width="1.5"/>
+                <path d="M4 20C4 15.5817 7.58172 12 12 12C16.4183 12 20 15.5817 20 20"
+                      stroke="#333" stroke-width="1.5"/>
+              </svg>
+              <span id="username">Boldoo</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="main-layout">
+          <section class="slogan-and-search">
+            <h1 id="slogan">Welcome back, Boldoo</h1>
+            <div class="search-field-group">
+              <input type="search" id="search-field" placeholder="Хүссэн зүйлээ хай" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="6" stroke="#000" />
+                <path d="M14 14L20 20" stroke="#000" stroke-linecap="round" />
+              </svg>
+            </div>
+          </section>
+
+<!--
+  FEED endees ehelj baigaa.
+-->          <section class="news-feed">
+            <article class="q-card">
+              <div class="q-header">
+                <div class="user-info">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="8" r="4" stroke="#333" stroke-width="1.5"/>
+                    <path d="M4 20C4 15.5817 7.58172 12 12 12C16.4183 12 20 15.5817 20 20"
+                          stroke="#333" stroke-width="1.5"/>
+                  </svg>
+                  <div class="user-meta">
+                   <span class="user-name">
+                     Bilguun/ICSI142
+                        <span class="tags-inline">
+                             <span class="tag hot">Hot Q</span>
+                             <span class="tag">МТЭС</span>
+                             </span>
+                        </span>
+                    <span class="date">Өнөөдөр</span>
+
+                  </div>
+                </div>
+                <button class="menu-btn">⋯</button>
+              </div>
+
+              <div class="q-body">
+                <h3>OOP : Удамшлын асуудал</h3>
+                <p>
+                  Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу? Энийг сая интернетээс хайж судлаад ч ойлгосонгүй. Тайлбарлаад өгөх хүн байна уу?
+                </p>
+              </div>
+
+              <hr />
+
+              <div class="q-footer">
+                <div class="vote">
+                  <button class="vote-btn">⬆</button>
+                  <span>20</span>
+                  <button class="vote-btn">⬇</button>
+                </div>
+                <div class="comments">
+                  💬 <span>46</span>
+                </div>
+                <div class="save-btn">💾</div>
+              </div>
+            </article>
+          </section>
+        </div>
+
+     <!--
+  SIDEBAR endees ehelj baigaa.
+-->
+        <aside class="side-layout">
+          <div class="leaderboard">
+            <h3>Leaderboard</h3>
+            <ul>
+              <li><span>🥇 Б.Билгүүн</span><span>696 969 Aura</span></li>
+              <li><span>🥈 Г.Ёндонжамц</span><span>88 988 Aura</span></li>
+              <li><span>🥉 Г.Энхтүвшин</span><span>88 988 Aura</span></li>
+            </ul>
+          </div>
+
+          <div class="stats">
+            <h3>Үзүүлэлт</h3>
+            <ul>
+              <li><span>Миний асуултууд</span><span>9</span></li>
+              <li><span>Миний хариултууд</span><span>2</span></li>
+              <li><span>Миний ранк</span><span>1502</span></li>
+              <li><span>Миний тэмдэгнүүд</span><span>1</span></li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
+
+<div class="left-nav">
+  <div class="logo">
+    <span id="logo-txt">MEDY</span>
+  </div>
+  <button class="nav-btn">Асуулт асуух</button>
+  <button class="nav-btn secondary">Миний класс</button>
+</div>
+
+
+

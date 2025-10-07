@@ -1,11 +1,7 @@
-/*CSS sain suraagui bolohoor CHATGPT-r example garguulav
-*/
-
-
-/* ==================== RESET & BASE STYLES ==================== */
+/* HOME.CSS hesgiig CSS deer turshlaga dutuu uchir example bolgood AI ashiglaj uzev.*/
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,6 +10,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  background: #fafafa;
 }
 
 /* ==================== NAVIGATION ==================== */
@@ -52,23 +49,54 @@ nav {
   letter-spacing: 2px;
 }
 
-.balance-container {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 10px;
+/* NAV BUTTONS */
+.nav-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 10px rgba(102, 126, 234, 0.25);
 }
 
+.nav-btn.secondary {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #6b75f8 0%, #8457d3 100%);
+}
+
+/* Theme toggle */
 .theme-toggle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  font-size: 20px;
+  color: #333;
+  transition: all 0.25s ease;
 }
 
 .theme-toggle:hover {
-  transform: rotate(180deg);
+  background: #f8f9fa;
+  transform: rotate(15deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* ==================== MAIN ==================== */
+/* ==================== MAIN LAYOUT ==================== */
 main {
   display: flex;
   margin: 0 80px;
@@ -138,157 +166,149 @@ main {
   pointer-events: none;
 }
 
-/* ==================== FEED ==================== */
-.q-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border: 1px solid #f0f0f0;
+/* ==================== FEED / QUESTION CARD ==================== */
+.news-feed {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
-.q-header {
+.q {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.q:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.q-first-layer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
-.user-info {
+.left-layer-part {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
+  flex: 1;
 }
 
-.user-meta {
+.left-layer-part svg:first-child {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.left-layer-part svg:first-child:hover {
+  transform: scale(1.1);
+}
+
+.name-and-date {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-items: flex-start;
 }
-.user-name {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+#name {
+  font-size: 14px;
   font-weight: 600;
-  font-size: 15px;
-  color: #111;
+  color: #333;
 }
-
-.tags-inline {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.tag {
-  padding: 2px 8px;
-  border: 1px solid #4a5cf5;
-  border-radius: 10px;
-  font-size: 11px;
-  color: #4a5cf5;
-  font-weight: 500;
-}
-
-.tag.hot {
-  border-color: #a87eff;
-  color: #a87eff;
-}
-
-
-.date {
+#date {
   font-size: 12px;
-  color: #777;
+  color: #888;
 }
 
-.menu-btn {
-  background: none;
-  border: none;
-  font-size: 22px;
-  color: #555;
+/* Tags */
+.tags {
+  display: flex;
+  gap: 8px;
+}
+.tags > span {
+  border: 1px solid #667eea;
+  background: #f0f3ff;
+  color: #667eea;
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.tags > span:hover {
+  background: #667eea;
+  color: white;
   cursor: pointer;
-  border-radius: 50%;
-  padding: 4px 8px;
-  transition: background 0.2s ease;
 }
 
-.menu-btn:hover {
-  background: #f0f0f0;
+/* Question content */
+.q-second-layer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
 }
 
-.q-body h3 {
+#q-title {
   font-size: 20px;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
-.q-body p {
+#q-description {
   font-size: 15px;
   color: #555;
   line-height: 1.6;
 }
 
-.q-card hr {
+/* Divider */
+hr {
   border: none;
-  border-top: 1px solid #eee;
-  margin: 8px 0;
+  border-top: 1px solid #e8e8e8;
+  margin: 10px 0;
 }
 
-.q-footer {
+/* Third layer actions */
+.q-third-layer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 15px;
 }
 
-.vote {
+.up-down-vote,
+.comment-count,
+.saved {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #f6f6f6;
-  border-radius: 25px;
-  padding: 4px 12px;
-}
-
-.vote-btn {
-  background: none;
-  border: none;
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
   cursor: pointer;
-  font-size: 16px;
-  color: #333;
 }
 
-.vote-btn:hover {
-  transform: scale(1.1);
+.up-down-vote:hover,
+.comment-count:hover {
+  background: #e8e8e8;
 }
 
-.comments {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  background: #f6f6f6;
-  border-radius: 25px;
-  padding: 4px 12px;
-}
-
-.save-btn {
-  background: #f6f6f6;
-  border-radius: 50%;
-  padding: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.save-btn:hover {
-  background: #4a5cf5;
+.saved:hover {
+  background: #667eea;
   color: white;
 }
+
 /* ==================== SIDEBAR ==================== */
 .side-layout {
   flex: 3;
-  padding-top: 70px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -335,74 +355,18 @@ main {
   background: #eaf0ff;
 }
 
-/* Responsive */
+/* ==================== RESPONSIVE ==================== */
 @media (max-width: 900px) {
   main {
     flex-direction: column;
+    margin: 0 20px;
   }
+
   .side-layout {
     order: -1;
   }
-}
-/* ==================== NAV BUTTONS ==================== */
-.nav-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 12px;
-  padding: 10px 22px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  box-shadow: 0 3px 10px rgba(102, 126, 234, 0.25);
-}
 
-.nav-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.35);
-  background: linear-gradient(135deg, #6b75f8 0%, #8457d3 100%);
+  #slogan {
+    font-size: 36px;
+  }
 }
-
-.nav-btn:active {
-  transform: scale(0.97);
-}
-
-/* optional variant for secondary button */
-.nav-btn.secondary {
-  background: #f8f9fa;
-  color: #333;
-  border: 1px solid #ddd;
-  box-shadow: none;
-}
-
-.nav-btn.secondary:hover {
-  background: #ebefff;
-  color: #4a5cf5;
-  border-color: #cdd2ff;
-}
-
-
-/* ==================== THEME TOGGLE ==================== */
-.theme-toggle {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: none;
-  background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
-  box-shadow: 3px 3px 6px #c5c5c5, -3px -3px 6px #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: #333;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-  transform: rotate(25deg) scale(1.1);
-  box-shadow: 0 0 12px rgba(102, 126, 234, 0.4);
-  background: linear-gradient(145deg, #eaeaea, #ffffff);
-}
-

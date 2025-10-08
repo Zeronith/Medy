@@ -76,23 +76,6 @@
         font-weight: 500;
       }
 
-      #login-btn:hover {
-        background: #333;
-        color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      }
-
-      /* Theme toggle with hover */
-      .theme-toggle {
-        cursor: pointer;
-        transition: transform 0.3s ease;
-      }
-
-      .theme-toggle:hover {
-        transform: rotate(180deg);
-      }
-
       /* ==================== MAIN LAYOUT ==================== */
       main {
         display: flex;
@@ -126,13 +109,11 @@
         width: 100%;
       }
 
-      #slogan {
-        font-style: italic;
-        font-size: 60px;
-        font-family: Roboto, sans-serif;
+    #slogan {
+        font-size: 48px;
+        font-weight: 600;
         text-align: center;
-        background-clip: text;
-      }
+        }
 
       /* Search field group with icon */
       .search-field-group {
@@ -156,12 +137,6 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         background-color: #f8f9fa;
         transition: all 0.3s ease;
-      }
-
-      #search-field:focus {
-        border-color: #667eea;
-        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
-        background-color: white;
       }
 
       .search-field-group svg {
@@ -207,15 +182,6 @@
         flex: 1;
       }
 
-      /* User avatar with hover effect */
-      .left-layer-part > svg:first-child {
-        transition: transform 0.3s ease;
-        cursor: pointer;
-      }
-
-      .left-layer-part > svg:first-child:hover {
-        transform: scale(1.1);
-      }
 
       /* Name and date display */
       .name-and-date {
@@ -231,7 +197,10 @@
         font-weight: 600;
         color: #333;
       }
-
+      a{
+        text-decoration: none;
+        color: black;
+      }
       #date {
         font-size: 12px;
         color: #888;
@@ -247,9 +216,9 @@
       }
 
       .tags > span {
-        border: 1px solid #667eea;
+        border: 1px solid #9397aa;
         background: #f0f3ff;
-        color: #667eea;
+        color: #858585;
         border-radius: 12px;
         padding: 4px 12px;
         font-size: 11px;
@@ -257,22 +226,13 @@
         transition: all 0.3s ease;
       }
 
-      .tags > span:hover {
-        background: #667eea;
-        color: white;
-        cursor: pointer;
-      }
-
+  
       /* Three dots menu with hover */
       .q-first-layer > svg:last-child {
         cursor: pointer;
         padding: 5px;
         border-radius: 50%;
         transition: background 0.3s ease;
-      }
-
-      .q-first-layer > svg:last-child:hover {
-        background: #f0f0f0;
       }
 
       /* Question content area */
@@ -322,18 +282,13 @@
         transition: all 0.3s ease;
       }
 
-      .up-down-vote:hover {
-        background: #e8e8e8;
-      }
+
 
       .up-down-vote svg {
         cursor: pointer;
         transition: transform 0.2s ease;
       }
 
-      .up-down-vote svg:hover {
-        transform: scale(1.2);
-      }
 
       .up-down-vote span {
         font-weight: 600;
@@ -354,10 +309,6 @@
         transition: all 0.3s ease;
       }
 
-      .comment-count:hover {
-        background: #e8e8e8;
-      }
-
       .comment-count span {
         font-size: 14px;
         font-weight: 500;
@@ -373,12 +324,4 @@
         cursor: pointer;
         transition: all 0.3s ease;
         margin-left: auto; 
-      }
-
-      .saved:hover {
-        background: #667eea;
-      }
-
-      .saved:hover svg path {
-        fill: white;
       }

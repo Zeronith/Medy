@@ -25,20 +25,23 @@ nav {
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-.nav-btn-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 30px;
+
+.nav-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
 }
-#ask-question-btn , #my-class-btn{
-    padding: 8px;
-    border-radius: 6px;
-    border : 1px solid black;
-    background-color: white;
-    width: 110px ;
+
+#ask-question-btn, #my-class-btn {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid black;
+  background-color: white;
+  width: 110px;
 }
+
 .left-nav {
   flex: 4;
   display: flex;
@@ -55,17 +58,23 @@ nav {
   gap: 10px;
 }
 
-/* Logo */
+/* ==================== UNIVERSAL LOGO STYLES ==================== */
+#medy-logo {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0; /* Prevents logo from shrinking */
+}
+
 #logo-txt {
-  font-size: 35px;
+  font-size: 28px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-right: 10px;
+  flex-shrink: 0; /* Prevents text from shrinking */
 }
 
 /* Balance display */
-.balance-container, .profile {
+.balance-container{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -73,9 +82,23 @@ nav {
   padding: 5px 10px;
 }
 
+.balance-container svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
 #balance-txt {
   font-size: 20px;
   font-weight: 600;
+}
+
+/* Theme switcher icon */
+.right-nav > svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
 /* Buttons */
@@ -130,6 +153,7 @@ main {
   align-items: center;
   padding-top: 70px;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -144,7 +168,6 @@ a {
   gap: 20px;
   width: 100%;
 }
-
 
 .search-field-group {
   display: flex;
@@ -163,7 +186,6 @@ a {
   height: 30px;
   font-size: 14px;
   border: 1px solid black;
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   background-color: #ffffff;
   transition: all 0.3s ease;
 }
@@ -172,6 +194,8 @@ a {
   position: absolute;
   right: 15px;
   pointer-events: none;
+  width: 20px;
+  height: 20px;
 }
 
 /* ==================== NEWS FEED / QUESTION CARDS ==================== */
@@ -341,7 +365,6 @@ hr {
   margin-left: auto;
 }
 
-
 .side-layout {
   flex: 3;
   display: flex;
@@ -350,55 +373,90 @@ hr {
   padding-top: 70px;
 }
 
-.leaderboard{
-    display: flex;
-    height: 100%;
-    flex: 6;
+.leaderboard {
+  display: flex;
+  height: 100%;
+  flex: 6;
 }
 
-.statistic{
-    flex: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 8px;  
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.statistic > h3{
-    text-align: center;
-    font-size: 24px;
-}
-.statistic-grid  {
-    display: grid;
-    /* background-color: #f0f0f0; */
-    padding: 8px;
-    height: 200px;
-    width: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap:15px;
-    grid-row-gap: 15px;
+.statistic {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.q-num { grid-area: 1 / 1 / 2 / 2;  }
-.a-num { grid-area: 1 / 2 / 2 / 3; }
-.r-num { grid-area: 1 / 3 / 2 / 4; }
-.b-num { grid-area: 2 / 1 / 3 / 4;  }
+.statistic > h3 {
+  text-align: center;
+  font-size: 24px;
+}
 
-.a-num , .q-num , .r-num , .b-num{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    border  : 2px solid rgb(218, 218, 218);
-    padding: 12px;
+.statistic-grid {
+  display: grid;
+  padding: 8px;
+  height: 200px;
+  width: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 }
-.a-num  p , .q-num  p, .r-num  p , .b-num  p{
-    font-size: 12px;
+
+.q-num {
+  grid-area: 1 / 1 / 2 / 2;
 }
-#badges-num , #rank-num , #question-num , #answer-num{
-    font-size: 24px;
-}   
+
+.a-num {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.r-num {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.b-num {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.a-num, .q-num, .r-num, .b-num {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid rgb(218, 218, 218);
+  padding: 12px;
+}
+
+.a-num p, .q-num p, .r-num p, .b-num p {
+  font-size: 12px;
+}
+
+#badges-num, #rank-num, #question-num, #answer-num {
+  font-size: 24px;
+}
+
+.slogan-and-search > h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Profile styles */
+.profile {
+  gap: 8px;
+}
+
+.profile svg {
+  width: 28px;
+  height: 28px;
+}
+
+#username {
+  font-size: 14px;
+  font-weight: 500;
+}

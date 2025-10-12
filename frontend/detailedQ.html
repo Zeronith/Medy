@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medy</title>
+    <title>Medy – Home</title>
     <link rel="stylesheet" href="./styles/home-landing.css" />
   </head>
+
   <body>
     <div class="main-container">
       <header>
         <nav>
-         <div class="left-nav">
+          <div class="left-nav">
             <svg
               id="medy-logo"
               width="48px"
@@ -44,59 +45,30 @@
               />
             </svg>
             <span id="logo-txt">MEDY</span>
-        <div class="nav-btn-container">
-            <button id="ask-question-btn" type="button">Q Асуух</button>
-            <button id="my-class-btn" type="button">Миний бүлгүүд</button>
+            <div class="nav-btn-container">
+              <button id="ask-question-btn" type="button">Q Асуух</button>
+              <button id="my-class-btn" type="button">Миний бүлгүүд</button>
+            </div>
           </div>
-          </div>
-                    <div class="slogan-and-search">
-
-           <div class="search-field-group">
-              <input
-                type="search"
-                id="search-field"
-                placeholder="Хүссэн зүйлээ хай"
-              />
-              <svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                alt="icon of search "
-              >
-                <g clip-path="url(#clip0_15_152)">
-                  <!-- <rect width="24" height="24" fill="white"/> -->
-                  <circle
-                    cx="10.5"
-                    cy="10.5"
-                    r="6.5"
-                    stroke="#000000"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z"
-                    fill="#000000"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_15_152">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
+          <div class="slogan-and-search">
+            <div class="search-field-group">
+              <input type="search" id="search-field" placeholder="Хүссэн зүйлээ хай" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="10" cy="10" r="6" stroke="#000" />
+                <path d="M14 14L20 20" stroke="#000" stroke-linecap="round" />
               </svg>
             </div>
-             </div>
+          </div>
           <div class="right-nav">
             <div class="balance-container">
-                <svg
-                    width="48px"
-                    height="48px"
-                    viewBox="-0.5 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    alt="icon of coin "
-                >
+               <svg
+                width="48px"
+                height="48px"
+                viewBox="-0.5 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                alt="icon of coin "
+              >
                 <path
                   d="M12 22.9199C17.5228 22.9199 22 18.4428 22 12.9199C22 7.39707 17.5228 2.91992 12 2.91992C6.47715 2.91992 2 7.39707 2 12.9199C2 18.4428 6.47715 22.9199 12 22.9199Z"
                   stroke="#000000"
@@ -109,9 +81,9 @@
                   fill="#000000"
                 />
               </svg>
-              <span id="balance-txt">0</span>
+              <span id="balance-txt">8969</span>
             </div>
-            <svg
+              <svg
               fill="#000000"
               height="40px"
               width="40px"
@@ -134,19 +106,20 @@
                 </g>
               </g>
             </svg>
-            <button id="login-btn"  type="button">
-                <a href="./home.html">Нэвтрэх</a></button>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="8" r="4" stroke="#333" stroke-width="1.5" />
+              <path d="M4 20C4 15.5817 7.58172 12 12 12C16.4183 12 20 15.5817 20 20" stroke="#333" stroke-width="1.5" />
+            </svg>
+            <span id="username">Boldoo</span>
           </div>
         </nav>
       </header>
+
       <main>
         <div class="main-layout">
-          <section class="slogan-and-search">
-            <h1 id="slogan">Хүссэн зүйлээ MEDY</h1>
-          </section>
           <div class="news-feed">
             <article class="q">
-              <div class="q-first-layer">
+               <div class="q-first-layer">
                <div class="left-layer-part">
                  <svg
                   width="40px"
@@ -266,7 +239,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <!-- <rect width="24" height="24" fill="white" /> -->
+                 
                   <path
                     d="M7 14.5L12 9.5L17 14.5"
                     stroke="#000000"
@@ -291,6 +264,7 @@
                   />
                 </svg>
                </div>
+
                 <div class="comment-count">
                     <svg
                   width="20px"
@@ -346,75 +320,156 @@
                     </svg>
                 </div>
               </div>
+              <section id="fourth-layer-comment">
+ <div class="comment-filter">
+    <select name="comments" id="comments">
+      <option value="newest">Шинэ</option>
+      <option value="oldest">Хуучин</option>
+      <option value="most-liked">Их саналтай</option>
+    </select>
+  </div>
+
+  <div class="comment-item">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="8" r="4" stroke="#555" stroke-width="1.5" />
+      <path d="M4 20c0-4 3.6-8 8-8s8 4 8 8" stroke="#555" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+
+    <div class="name-and-date">
+      <span id="name">Bilguun/ICSI142</span>
+      <span id="date">Өнөөдөр</span>
+    </div>
+
+    <span id="comment">
+      Сайн уу? болохгүй ээ учир нь C хэлийг ойлгоход тулгуур буюу шаардагдах мэдлэг нь алгоритм өөрөө юм.
+      Тэгэхээр хүссэн хүсээгүй алгоритмын үндэс хичээлийг үзэж байж үзнээ.
+    </span>
+<hr/>
+    <div class="up-down-vote">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+        <path d="M7 14.5L12 9.5L17 14.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>20</span>
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+        <path d="M17 9.5L12 14.5L7 9.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>3</span>
+    </div>
+
+    <div class="comment-count">
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M16 1H0V13H5L8 16L11 13H16V1ZM3 6H5V8H3V6ZM9 6H7V8H9V6ZM13 6H11V8H13V6Z"
+          fill="#000"
+        />
+      </svg>
+      <span>1</span>
+    </div>
+  </div>
+              </section>
             </article>
           </div>
         </div>
-        <aside class="side-layout">
+
+       <aside class="side-layout">
           <section class="statistic">
             <h3>Үзүүлэлт</h3>
-            <hr>
+            <hr />
             <div class="statistic-grid">
-                <div class="q-num">
-                    <div class="q-txt"> 
-                        <p id="question-txt">Q : Questions</p>
-                        <p id="question-num">0</p>
-                    </div>
-                    
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- <rect width="24" height="24" fill="white"/> -->
-                    <path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+              <div class="q-num">
+                <div class="q-txt">
+                  <p id="question-txt">Q : Questions</p>
+                  <p id="question-num">7</p>
                 </div>
-                <div class="a-num">
-                       <div class="a-txt">
-                            <p id="answer-txt">A : Answer</p>
-                            <p id="answer-num">0</p> 
-                       </div>
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<!-- <rect width="24" height="24" fill="white"/> -->
-<path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-                <div class="r-num">
-                    <div class="r-txt">
-                            <p id="rank-txt">R : Rank</p>
-                            <p id="rank-num">500</p> 
-                       </div>
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<!-- <rect width="24" height="24" fill="white"/> -->
-<path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-                <div class="b-num">
-                       <div class="b-txt">
-                            <p id="badges-txt">B : Badges</p>
-                            <p id="badges-num">0</p> 
-                       </div>
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<!-- <rect width="24" height="24" fill="white"/> -->
-<path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </div>
-            </div>
-        </section>
-            <section class="leaderboard">
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                  <path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
 
-            </section>
-        </aside>  
+              <div class="a-num">
+                <div class="a-txt">
+                  <p id="answer-txt">A : Answer</p>
+                  <p id="answer-num">34</p>
+                </div>
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                  <path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+
+              <div class="r-num">
+                <div class="r-txt">
+                  <p id="rank-txt">R : Rank</p>
+                  <p id="rank-num">13</p>
+                </div>
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                  <path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+
+              <div class="b-num">
+                <div class="b-txt">
+                  <p id="badges-txt">B : Badges</p>
+                  <p id="badges-num">2</p>
+                </div>
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                  <path d="M9.5 7L14.5 12L9.5 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </section>
+     <section class="leaderboard">
+  <h3>Leaderboard</h3>
+  <hr />
+  <ul>
+    <li class="top1">
+      <div class="rank-left">
+        <img src="./assets/golden-medal.png" alt="gold" class="medal" />
+        <img src="./assets/avatar1.png" alt="avatar" class="avatar" />
+        <div class="info">
+          <span class="name">Г.Ёндонжамц</span>
+          <span class="aura">2300 aura</span>
+        </div>
+      </div>
+      <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M9.5 7L14.5 12L9.5 17" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </li>
+
+    <li class="top2">
+      <div class="rank-left">
+        <img src="./assets/silver-medal.png" alt="silver" class="medal" />
+        <img src="./assets/avatar2.png" alt="avatar" class="avatar" />
+        <div class="info">
+          <span class="name">Билгүүн</span>
+          <span class="aura">2000 aura</span>
+        </div>
+      </div>
+      <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M9.5 7L14.5 12L9.5 17" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </li>
+
+    <li class="top3">
+      <div class="rank-left">
+        <img src="./assets/bronze-medal.png" alt="bronze" class="medal" />
+        <img src="./assets/avatar3.png" alt="avatar" class="avatar" />
+        <div class="info">
+          <span class="name">Энгүүн</span>
+          <span class="aura">1990 aura</span>
+        </div>
+      </div>
+      <svg class="arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M9.5 7L14.5 12L9.5 17" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </li>
+  </ul>
+</section>
+
+    
+        </aside>
       </main>
     </div>
   </body>
 </html>
-
-
-<!--
-2. TExt arilgah + Search bar location -> Enguunee
-Landing will only contain welcoming text 
-3. Ерөнхий layout 
-4. Бусад хуудасны загвар
-5. Figma 
-6. Log Out to profile dropdow
--->
-
-
-

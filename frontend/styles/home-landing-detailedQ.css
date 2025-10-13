@@ -1,5 +1,5 @@
 /* ==================== RESET & BASE STYLES ==================== */
-:root {
+/* :root {
   --primary-color: #667eea;
   --secondary-color: #764ba2;
   --background-color: #f9f9f9;
@@ -17,7 +17,7 @@
 --border-color: #333;
   --hover-color: #1f1 f1f;
   --shadow-color: rgba(0, 0, 0, 0.5); 
-}
+} */
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ nav {
   border-radius: 6px;
   border: 1px solid black;
   background-color: white;
-  width: 110px;
+  width: 120px;
 }
 
 .left-nav {
@@ -617,7 +617,7 @@ hr {
 }
 
 .leaderboard li {
-  background: #fefefe; /*default bg color*/
+  background: #fefefe; 
   border-radius: 12px;
   border: 1px solid #d8d7d7;
   display: flex;

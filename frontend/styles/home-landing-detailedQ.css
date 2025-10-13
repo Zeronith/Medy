@@ -1,4 +1,23 @@
 /* ==================== RESET & BASE STYLES ==================== */
+:root {
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --hover-color: #f0f0f0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+} 
+
+.darkmode{
+--primary-color: #1e3a8a;
+ --secondary-color: #6b21a8;
+  --background-color: #121212;
+--text-color: #e0e0e0;
+--border-color: #333;
+  --hover-color: #1f1 f1f;
+  --shadow-color: rgba(0, 0, 0, 0.5); 
+}
 * {
   margin: 0;
   padding: 0;
@@ -574,8 +593,9 @@ hr {
 }
 
 .leaderboard li {
-  background: #d8d8d8; /*default bg color*/
+  background: #fefefe; /*default bg color*/
   border-radius: 12px;
+  border: 1px solid #d8d7d7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -586,7 +606,7 @@ hr {
 
 .leaderboard li:hover {
   transform: translateY(-2px);
-  background: #9adcce; /*hover bg color buyu selectleh uyd*/
+  background: #ffffff; /*hover bg color buyu selectleh uyd*/
 }
 
 .rank-left {

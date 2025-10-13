@@ -586,7 +586,7 @@ hr {
 
 /* ==--_-=_++_+_+_+== LEADERBOARD  =+++++++++++++====+++++==++=== */
 .leaderboard {
-  background: #ffffff;
+  background: #fdfdfd;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);

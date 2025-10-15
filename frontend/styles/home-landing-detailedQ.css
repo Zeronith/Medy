@@ -1,23 +1,4 @@
-/* ==================== RESET & BASE STYLES ==================== */
-/* :root {
-  --primary-color: #667eea;
-  --secondary-color: #764ba2;
-  --background-color: #f9f9f9;
-  --text-color: #333;
-  --border-color: #e0e0e0;
-  --hover-color: #f0f0f0;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-} 
 
-.darkmode{
---primary-color: #1e3a8a;
- --secondary-color: #6b21a8;
-  --background-color: #121212;
---text-color: #e0e0e0;
---border-color: #333;
-  --hover-color: #1f1 f1f;
-  --shadow-color: rgba(0, 0, 0, 0.5); 
-} */
 * {
   margin: 0;
   padding: 0;
@@ -530,6 +511,10 @@ hr {
 .comment-filter select:hover {
   background-color: #f5f5f5;
 }
+.comment-filter select:focus{
+    outline: none;
+}
+
 .comment-item {
   display: flex;
   flex-direction: column;
@@ -582,6 +567,23 @@ hr {
     padding: 0px;
     gap: 0px;
 }
+.write-comment{
+    display: flex;
+    padding: 15px 20px;
+    gap: 10px;
+}
+#write-comment-input-field{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+#write-comment-input-field:focus{
+    outline: none;   
+}
+
+
+
 
 /* ==--_-=_++_+_+_+== LEADERBOARD  =+++++++++++++====+++++==++=== */
 .leaderboard {

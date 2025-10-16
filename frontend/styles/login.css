@@ -274,3 +274,6 @@ a{
   font-weight: 600;
   cursor: pointer;
 }
+#submit-btn:hover{
+    animation: bounce 2s;
+}

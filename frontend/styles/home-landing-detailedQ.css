@@ -401,13 +401,12 @@ hr {
 }
 
 .statistic {
-  flex: 4;
+  flex: 5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  padding: 8px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -419,8 +418,8 @@ hr {
 
 .statistic-grid {
   display: grid;
-  padding: 8px;
-  width: auto;
+  padding: 20px;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 15px;

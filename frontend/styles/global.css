@@ -1,0 +1,53 @@
+/* ==================== CSS VARIABLES ==================== */
+:root {
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #333333;
+  --text-gray: #666666;
+  --border-gray: #ddd;
+  
+  /* Spacing */
+  --spacing-xs: 0.3125rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.625rem;
+  --spacing-lg: 0.75rem;
+  --spacing-xl: 0.9375rem;
+  --spacing-2xl: 1.25rem;
+  --spacing-3xl: 1.5625rem;
+  --spacing-4xl: 2rem;
+  --spacing-5xl: 2.5rem;
+  --spacing-6xl: 5rem;
+  
+  /* Font Sizes */
+  --font-xs: 0.6875rem;
+  --font-sm: 0.75rem;
+  --font-base: 0.875rem;
+  --font-md: 0.9375rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 1.75rem;
+  --font-3xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 0.9375rem;
+  --radius-3xl: 1.5625rem;
+  --radius-full: 1.25rem;
+  --radius-round: 50%;
+  
+  /* Shadows */
+  --shadow-sm: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 0 1rem rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --transition-fast: all 0.2s ease;
+  --transition-base: all 0.3s ease;
+  --transition-slow: all 0.25s ease;
+}

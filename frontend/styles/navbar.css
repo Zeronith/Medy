@@ -1,0 +1,176 @@
+
+    /* ==================== NAVIGATION ==================== */
+nav {
+  width: 100%;
+  height: 3.75rem;
+  display: flex;
+  padding: var(--spacing-md) var(--spacing-6xl);
+  border-bottom: 1px solid var(--medium-gray);
+  background: var(--primary-white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+  align-items: center;
+
+  .nav-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-3xl);
+  }
+
+  .left-nav {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .right-nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+  }
+
+  /* Logo */
+  #medy-logo {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+  }
+
+  #logo-txt {
+    font-size: var(--font-2xl);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    letter-spacing: var(--spacing-xs);
+    flex-shrink: 0;
+    color: var(--primary-black);
+  }
+
+  /* Balance display */
+  .balance-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-lg);
+    background: var(--light-gray);
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      flex-shrink: 0;
+    }
+  }
+
+  #balance-txt {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    color: var(--primary-black);
+  }
+
+  /* Buttons */
+  .nav-btn {
+    background: var(--primary-black);
+    color: var(--primary-white);
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-base);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+
+    &.secondary {
+      background: var(--light-gray);
+      color: var(--dark-gray);
+      border: 1px solid var(--border-gray);
+      box-shadow: none;
+    }
+  }
+
+  #ask-question-btn,
+  #my-class-btn {
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-gray);
+    background-color: var(--primary-white);
+    width: 7.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: var(--font-base);
+  }
+
+  #login-btn {
+    background: var(--primary-white);
+    border: 1.5px solid var(--primary-black);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md) var(--spacing-2xl);
+    font-size: var(--font-base);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-black);
+  }
+}
+
+/* ==================== HERO SECTION ==================== */
+.slogan-and-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+  width: 100%;
+
+  h1 {
+    font-size: var(--font-3xl);
+    font-weight: 700;
+    color: var(--primary-black);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
+
+.search-field-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 21.875rem;
+
+  input {
+    outline: none;
+    padding: var(--spacing-xl) var(--spacing-3xl) var(--spacing-xl) var(--spacing-2xl);
+    border-radius: var(--radius-3xl);
+    width: 100%;
+    height: 1.875rem;
+    font-size: var(--font-base);
+    border: 2px solid var(--medium-gray);
+    background-color: var(--primary-white);
+    color: var(--dark-gray);
+  }
+
+  svg {
+    /* height: 50px; */
+    position: absolute;
+    right: var(--spacing-xl);
+    pointer-events: none;
+    width: var(--spacing-2xl);
+    height: var(--spacing-2xl);
+    color: var(--text-gray);
+  }
+}

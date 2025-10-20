@@ -1,4 +1,3 @@
-/* ==================== RESET & BASE STYLES ==================== */
 * {
   margin: 0;
   padding: 0;
@@ -7,20 +6,11 @@
 
 body {
   width: 100%;
-  height: 100vh;
-  overflow-y: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
 }
-.main-container {
-  width: 100%;
-  height:100%;
-  /* min-height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 /* ==================== NAVIGATION ==================== */
 nav {
   width: 100%;
@@ -71,7 +61,7 @@ nav {
 #medy-logo {
   width: 32px;
   height: 32px;
-  flex-shrink: 0; /* Prevents logo from shrinking */
+  flex-shrink: 0;
 }
 
 #logo-txt {
@@ -79,11 +69,11 @@ nav {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   letter-spacing: 2px;
-  flex-shrink: 0; /* Prevents text from shrinking */
+  flex-shrink: 0;
 }
 
 /* Balance display */
-.balance-container{
+.balance-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -103,54 +93,16 @@ nav {
 }
 
 /* Theme switcher icon */
-.right-nav > svg {
+.right-nav svg {
   width: 32px;
   height: 32px;
   flex-shrink: 0;
   cursor: pointer;
 }
 
-/* Buttons */
-.nav-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 22px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  box-shadow: 0 3px 10px rgba(102, 126, 234, 0.25);
-}
-
-.nav-btn.secondary {
-  background: #f8f9fa;
-  color: #333;
-  border: 1px solid #ddd;
-}
-
-.nav-btn:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(135deg, #6b75f8 0%, #8457d3 100%);
-}
-
-#login-btn {
-  background: white;
-  border: 1px solid #333;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
 /* ==================== MAIN LAYOUT ==================== */
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 80px;
   gap: 40px;
   min-height: calc(100vh - 60px);
@@ -168,9 +120,12 @@ main {
 a {
   text-decoration: none;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ==================== HERO SECTION ==================== */
+/* ==================== SEARCH ==================== */
 .slogan-and-search {
   display: flex;
   flex-direction: column;
@@ -208,116 +163,69 @@ a {
   width: 20px;
   height: 20px;
 }
-/* ==================== PROFILE SECTION ==================== */
-.main-container {
-  background-color: #f5f5f5;
+
+/* ==================== PROFILE INFO ==================== */
+#username {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#pfp {
+  height: 250px;
+  border: white 4px solid;
+  border-radius: 50%;
+}
+
+.profile-info {
+  height: 300px;
+  background-color: #ffffff;
   width: 100%;
-  min-height: 50vh;
+  display: flex;
+  gap: 50px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
+.pfp-username {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
-  font-family: "Segoe UI", Arial, sans-serif;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-.return-btn{
-    align-self: flex-start;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #8b8b8b;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 8px 12px;
-    border: 1px solid #616161;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-/* PROFILE CARD */
-.profile-section {
-  background-color: #ffffff;
-  padding: 40px 30px;
-  border-radius: 14px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.profile-section img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border: 3px solid #787878;
-  display: flex;
-    justify-content: start;
-    align-items: start;
-}
-.profile-section h2,span{
-    display: flex;
-    flex-wrap: wrap;
-}
-.profile-section h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin: 20px 20px 0px 40px;
-  color: #333;
-}
-.profile-section span {
-  display: block;
-  margin-top: 100px;
-  font-size: 22px;
-  font-weight: 600;
-  background-color: #333;
-  border-radius: 10px;
-  color: white;
-  padding: 20 px;
-}
-
-/* PROFILE NAVIGATION */
-.profile-nav {
-    width: 1000px; 
-    height: 40px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items:baseline;
-    background-color: rgb(122, 122, 122);
-    color: #f5f5f5;
-    margin-top: 15px;
-}
-
-.profile-nav a {
-  text-decoration: none;
-  color: #434343;
-    background-color: #ffffff;
-  padding-left: 200px;
-  padding-right: 200px;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 6px 10px;
-  border-radius: 30px;
-}
-/* CONTENT SECTION */
-.content-section {
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  width: 100%;
-  max-width: 1000px;
 }
-.content-section div {
-  flex: 1 1 300px;
-  background-color: #fafafa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-info p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ==================== PROFILE FEED ==================== */
+.profile-feed {
+  width: 100%;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ==================== SIDE LAYOUT ==================== */
+.side-layout {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 500px;
+  padding-top: 70px;
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+  border-radius: 16px;
+  box-shadow: 0 0px 10px rgba(0,0,0,0.08);
 }

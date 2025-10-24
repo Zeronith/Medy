@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Medy – Home</title>
+    <title>Medy – Profile</title>
+    <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/profile.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
   </head>
 
   <body>
@@ -142,26 +144,75 @@
           </div>
         </nav>
       </header>
+
       <main>
         <div class="main-layout">
           <div class="profile-info">
             <div class="pfp-username">
               <img
                 id="pfp"
-                src="./assets/avatar3.png"
-                alt="Profile picture of users"
+                src="https://via.placeholder.com/150"
+                alt="Profile picture"
               />
               <p id="username">Zeronith</p>
             </div>
             <div class="user-info">
-              <p id="aura">Aura : 12345</p>
-              <p id="rank">Rank : 54321</p>
-              <p id="Badges">Badges : 3</p>
+              <p>Aura: <span>12345</span></p>
+              <p>Rank: <span>54321</span></p>
+              <p>Badges: <span>3</span></p>
             </div>
           </div>
-          <div class="profile-feed"></div>
+          <div class="profile-feed">
+            <p>Ирсэн активити энд байрлана</p>
+          </div>
         </div>
-        <aside class="side-layout"></aside>
+
+        <aside class="side-layout">
+          <div class="statistic">
+            <h3>Статистик</h3>
+            <div class="stat-item">
+              <span class="stat-label">Асуусан асуулт</span>
+              <span class="stat-value">24</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Өгөөсөн хариулт</span>
+              <span class="stat-value">156</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Авсан үнэлгээ</span>
+              <span class="stat-value">89</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Нийт үндсэн</span>
+              <span class="stat-value">127</span>
+            </div>
+          </div>
+
+          <div class="recent-activity">
+            <h3>Сүүлийн үйл ажиллагаа</h3>
+            <div class="activity-item">
+              <div class="activity-icon">📝</div>
+              <div class="activity-content">
+                <p class="activity-title">Асуулт асуусан</p>
+                <p class="activity-time">2 цагийн өмнө</p>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">✓</div>
+              <div class="activity-content">
+                <p class="activity-title">Хариулт өгөөсөн</p>
+                <p class="activity-time">5 цагийн өмнө</p>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">👍</div>
+              <div class="activity-content">
+                <p class="activity-title">Хариулт баталлаа</p>
+                <p class="activity-time">1 өдрийн өмнө</p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </main>
     </div>
   </body>

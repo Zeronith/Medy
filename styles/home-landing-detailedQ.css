@@ -133,13 +133,18 @@ hr {
       border-radius: var(--radius-round);
     }
   }
-
-  .name-and-date {
-    display: flex;
+  .name-class-date{
+     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     font-family: "Roboto", sans-serif;
+    
+    #class {
+      font-size: var(--font-base);
+      font-weight: 600;
+      color: var(--dark-gray);
+    }
 
     #name {
       font-size: var(--font-base);
@@ -151,6 +156,16 @@ hr {
       font-size: var(--font-sm);
       color: var(--text-gray);
     }
+  }
+  .name-and-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Roboto", sans-serif;
+    
+
+
   }
 
   .tags {

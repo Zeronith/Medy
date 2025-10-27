@@ -7,337 +7,35 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/home-landing-detailedQ.css" />
+        <script src="./a.js" defer></script>
+    <script src="./q.js" defer></script>
+    <script src="./navbar.js" deref></script>
+    <script src="./write-comment.js"></script>
+    <script src="./statistic.js"></script>
+        <script src="./leaderboard.js"></script>
+
   </head>
 
   <body>
     <div class="main-container">
       <header>
-        <nav>
-          <div class="left-nav">
-            <a href="./home.html">
-              <svg
-                id="medy-logo"
-                width="48px"
-                height="48px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                alt="logo of medy "
-              >
-                <path
-                  opacity="0.5"
-                  d="M12 20.0283V18H8L8 20.0283C8 20.3054 8 20.444 8.09485 20.5C8.18971 20.556 8.31943 20.494 8.57888 20.3701L9.82112 19.7766C9.9089 19.7347 9.95279 19.7138 10 19.7138C10.0472 19.7138 10.0911 19.7347 10.1789 19.7767L11.4211 20.3701C11.6806 20.494 11.8103 20.556 11.9051 20.5C12 20.444 12 20.3054 12 20.0283Z"
-                  fill="#1C274D"
-                />
-                <path
-                  d="M8 18H7.42598C6.34236 18 5.96352 18.0057 5.67321 18.0681C5.15982 18.1785 4.71351 18.4151 4.38811 18.7347C4.27837 18.8425 4.22351 18.8964 4.09696 19.2397C3.97041 19.5831 3.99045 19.7288 4.03053 20.02C4.03761 20.0714 4.04522 20.1216 4.05343 20.1706C4.16271 20.8228 4.36259 21.1682 4.66916 21.4142C4.97573 21.6602 5.40616 21.8206 6.21896 21.9083C7.05566 21.9986 8.1646 22 9.75461 22H14.1854C15.7754 22 16.8844 21.9986 17.7211 21.9083C18.5339 21.8206 18.9643 21.6602 19.2709 21.4142C19.5774 21.1682 19.7773 20.8228 19.8866 20.1706C19.9784 19.6228 19.9965 18.9296 20 18H12V20.0283C12 20.3054 12 20.444 11.9051 20.5C11.8103 20.556 11.6806 20.494 11.4211 20.3701L10.1789 19.7767C10.0911 19.7347 10.0472 19.7138 10 19.7138C9.95279 19.7138 9.9089 19.7347 9.82112 19.7766L8.57888 20.3701C8.31943 20.494 8.18971 20.556 8.09485 20.5C8 20.444 8 20.3054 8 20.0283V18Z"
-                  fill="#1C274D"
-                />
-                <path
-                  opacity="0.5"
-                  d="M4.72718 2.73332C5.03258 2.42535 5.46135 2.22456 6.27103 2.11478C7.10452 2.00177 8.2092 2 9.7931 2H14.2069C15.7908 2 16.8955 2.00177 17.729 2.11478C18.5387 2.22456 18.9674 2.42535 19.2728 2.73332C19.5782 3.0413 19.7773 3.47368 19.8862 4.2902C19.9982 5.13073 20 6.24474 20 7.84202L20 18H7.42598C6.34236 18 5.96352 18.0057 5.67321 18.0681C5.15982 18.1785 4.71351 18.4151 4.38811 18.7347C4.27837 18.8425 4.22351 18.8964 4.09696 19.2397C4.02435 19.4367 4 19.5687 4 19.7003V7.84202C4 6.24474 4.00176 5.13073 4.11382 4.2902C4.22268 3.47368 4.42179 3.0413 4.72718 2.73332Z"
-                  fill="#1C274D"
-                />
-                <path
-                  d="M7.25 7C7.25 6.58579 7.58579 6.25 8 6.25H16C16.4142 6.25 16.75 6.58579 16.75 7C16.75 7.41421 16.4142 7.75 16 7.75H8C7.58579 7.75 7.25 7.41421 7.25 7Z"
-                  fill="#1C274D"
-                />
-                <path
-                  d="M8 9.75C7.58579 9.75 7.25 10.0858 7.25 10.5C7.25 10.9142 7.58579 11.25 8 11.25H13C13.4142 11.25 13.75 10.9142 13.75 10.5C13.75 10.0858 13.4142 9.75 13 9.75H8Z"
-                  fill="#1C274D"
-                />
-              </svg>
-            </a>
-            <a href="./home.html">
-              <span id="logo-txt">MEDY</span>
-            </a>
-            <div class="nav-btn-container">
-              <button id="ask-question-btn" type="button">Q Асуух</button>
-              <button id="my-class-btn" type="button">Миний бүлгүүд</button>
-            </div>
-          </div>
-          <div class="slogan-and-search">
-            <div class="search-field-group">
-              <input
-                type="search"
-                id="search-field"
-                placeholder="Хүссэн зүйлээ хай"
-              />
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="10" cy="10" r="6" stroke="#000" />
-                <path d="M14 14L20 20" stroke="#000" stroke-linecap="round" />
-              </svg>
-            </div>
-          </div>
-          <div class="right-nav">
-            <div class="balance-container">
-              <svg
-                width="48px"
-                height="48px"
-                viewBox="-0.5 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                alt="icon of coin "
-              >
-                <path
-                  d="M12 22.9199C17.5228 22.9199 22 18.4428 22 12.9199C22 7.39707 17.5228 2.91992 12 2.91992C6.47715 2.91992 2 7.39707 2 12.9199C2 18.4428 6.47715 22.9199 12 22.9199Z"
-                  stroke="#000000"
-                  stroke-width="1"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12.7002 17.1099V18.21C12.7002 18.3877 12.6296 18.5582 12.504 18.6838C12.3783 18.8095 12.2079 18.8799 12.0302 18.8799C11.8525 18.8799 11.6821 18.8095 11.5565 18.6838C11.4308 18.5582 11.3602 18.3877 11.3602 18.21V17.0801C10.9165 17.0072 10.4917 16.8468 10.1106 16.6082C9.72943 16.3695 9.39958 16.0573 9.14023 15.6899C9.04577 15.57 8.99311 15.4226 8.99023 15.27C8.99014 15.1834 9.00762 15.0975 9.04164 15.0178C9.07566 14.9382 9.12551 14.8662 9.18816 14.8064C9.2508 14.7466 9.32494 14.7 9.40608 14.6697C9.48723 14.6393 9.5737 14.6258 9.66023 14.6299C9.74611 14.6294 9.83102 14.648 9.90884 14.6843C9.98667 14.7206 10.0554 14.774 10.1102 14.8401C10.4301 15.258 10.8643 15.574 11.3602 15.75V13.21C10.0302 12.69 9.36023 11.9099 9.36023 10.8999C9.38027 10.3592 9.59279 9.84343 9.95949 9.44556C10.3262 9.04769 10.8229 8.79397 11.3602 8.72998V7.62988C11.3602 7.45219 11.4308 7.2819 11.5565 7.15625C11.6821 7.0306 11.8525 6.95996 12.0302 6.95996C12.2079 6.95996 12.3783 7.0306 12.504 7.15625C12.6296 7.2819 12.7002 7.45219 12.7002 7.62988V8.71997C13.0723 8.77828 13.4289 8.91103 13.7485 9.11035C14.0681 9.30967 14.3442 9.57137 14.5602 9.87988C14.6555 9.99235 14.7117 10.1329 14.7202 10.28C14.7229 10.3657 14.7083 10.451 14.6774 10.531C14.6464 10.611 14.5997 10.684 14.54 10.7456C14.4803 10.8072 14.4088 10.856 14.3298 10.8894C14.2509 10.9228 14.166 10.94 14.0802 10.9399C13.9906 10.9394 13.9022 10.9196 13.8211 10.8816C13.74 10.8436 13.668 10.7884 13.6102 10.72C13.3718 10.4221 13.0574 10.1942 12.7002 10.0601V12.3101L12.9502 12.4099C14.2202 12.9099 15.0102 13.63 15.0102 14.77C14.9954 15.3808 14.7481 15.9629 14.3189 16.3977C13.8897 16.8325 13.3108 17.0871 12.7002 17.1099ZM11.3602 11.73V10.0999C11.1988 10.1584 11.0599 10.2662 10.963 10.408C10.8662 10.5497 10.8162 10.7183 10.8202 10.8899C10.8185 11.0673 10.8688 11.2414 10.9647 11.3906C11.0607 11.5399 11.1981 11.6579 11.3602 11.73ZM13.5502 14.8C13.5502 14.32 13.2202 14.03 12.7002 13.8V15.8C12.9387 15.7639 13.156 15.6427 13.3122 15.459C13.4684 15.2752 13.553 15.0412 13.5502 14.8Z"
-                  fill="#000000"
-                />
-              </svg>
-              <span id="balance-txt">8969</span>
-            </div>
-            <svg
-              fill="#000000"
-              height="40px"
-              width="40px"
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 384 384"
-              xml:space="preserve"
-              alt="icon of theme switching "
-            >
-              <g>
-                <g>
-                  <path
-                    d="M311.576,148.336l-32-136C277.872,5.112,271.424,0,264,0H120c-7.424,0-13.872,5.112-15.576,12.336l-32,136c-1.12,4.76,0,9.768,3.04,13.6C78.496,165.768,83.112,168,88,168h88v184h-48c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h128
-			c8.832,0,16-7.168,16-16c0-8.832-7.168-16-16-16h-48V168h16v24c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-24h40
-			c4.888,0,9.504-2.232,12.536-6.064C311.576,158.104,312.696,153.096,311.576,148.336z M108.2,136l24.472-104h118.656L275.8,136
-			H108.2z"
-                  />
-                </g>
-              </g>
-            </svg>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="8" r="4" stroke="#333" stroke-width="1.5" />
-              <path
-                d="M4 20C4 15.5817 7.58172 12 12 12C16.4183 12 20 15.5817 20 20"
-                stroke="#333"
-                stroke-width="1.5"
-              />
-            </svg>
-            <a href="./index.html">
-              <span id="username">Boldoo</span>
-            </a>
-          </div>
-        </nav>
+        <medy-navbar username="Boldoo" balance="8969"></medy-navbar>
       </header>
 
       <main>
         <div class="main-layout">
           <div class="news-feed">
             <article class="q">
-              <div class="q-first-layer">
-                <div class="left-layer-part">
-                  <svg
-                    width="40px"
-                    height="40px"
-                    viewBox="0 0 24 24"
-                    fill="purple"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_15_82)">
-                      <rect width="24" height="24" fill="white" />
-                      <g filter="url(#filter0_d_15_82)">
-                        <path
-                          d="M14.3365 12.3466L14.0765 11.9195C13.9082 12.022 13.8158 12.2137 13.8405 12.4092C13.8651 12.6046 14.0022 12.7674 14.1907 12.8249L14.3365 12.3466ZM9.6634 12.3466L9.80923 12.8249C9.99769 12.7674 10.1348 12.6046 10.1595 12.4092C10.1841 12.2137 10.0917 12.022 9.92339 11.9195L9.6634 12.3466ZM4.06161 19.002L3.56544 18.9402L4.06161 19.002ZM19.9383 19.002L20.4345 18.9402L19.9383 19.002ZM16 8.5C16 9.94799 15.2309 11.2168 14.0765 11.9195L14.5965 12.7737C16.0365 11.8971 17 10.3113 17 8.5H16ZM12 4.5C14.2091 4.5 16 6.29086 16 8.5H17C17 5.73858 14.7614 3.5 12 3.5V4.5ZM7.99996 8.5C7.99996 6.29086 9.79082 4.5 12 4.5V3.5C9.23854 3.5 6.99996 5.73858 6.99996 8.5H7.99996ZM9.92339 11.9195C8.76904 11.2168 7.99996 9.948 7.99996 8.5H6.99996C6.99996 10.3113 7.96342 11.8971 9.40342 12.7737L9.92339 11.9195ZM9.51758 11.8683C6.36083 12.8309 3.98356 15.5804 3.56544 18.9402L4.55778 19.0637C4.92638 16.1018 7.02381 13.6742 9.80923 12.8249L9.51758 11.8683ZM3.56544 18.9402C3.45493 19.8282 4.19055 20.5 4.99996 20.5V19.5C4.70481 19.5 4.53188 19.2719 4.55778 19.0637L3.56544 18.9402ZM4.99996 20.5H19V19.5H4.99996V20.5ZM19 20.5C19.8094 20.5 20.545 19.8282 20.4345 18.9402L19.4421 19.0637C19.468 19.2719 19.2951 19.5 19 19.5V20.5ZM20.4345 18.9402C20.0164 15.5804 17.6391 12.8309 14.4823 11.8683L14.1907 12.8249C16.9761 13.6742 19.0735 16.1018 19.4421 19.0637L20.4345 18.9402Z"
-                          fill="#000000"
-                        />
-                      </g>
-                    </g>
-                    <defs>
-                      <filter
-                        id="filter0_d_15_82"
-                        x="2.55444"
-                        y="3.5"
-                        width="18.8911"
-                        height="19"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
-                      >
-                        <feFlood
-                          flood-opacity="0"
-                          result="BackgroundImageFix"
-                        />
-                        <feColorMatrix
-                          in="SourceAlpha"
-                          type="matrix"
-                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                          result="hardAlpha"
-                        />
-                        <feOffset dy="1" />
-                        <feGaussianBlur stdDeviation="0.5" />
-                        <feColorMatrix
-                          type="matrix"
-                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in2="BackgroundImageFix"
-                          result="effect1_dropShadow_15_82"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in="SourceGraphic"
-                          in2="effect1_dropShadow_15_82"
-                          result="shape"
-                        />
-                      </filter>
-                      <clipPath id="clip0_15_82">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <div class="name-and-date">
-                    <span id="name">Yondonkhuu/ICSI201</span>
-                    <span id="date">Өчигдөр</span>
-                  </div>
-                  <div class="tags">
-                    <span>Hot Q</span>
-                    <span>МТЭС</span>
-                  </div>
-                </div>
-                <svg
-                  width="30px"
-                  height="30px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="24" height="24" fill="white" />
-                  <circle
-                    cx="7"
-                    cy="12"
-                    r="0.5"
-                    stroke="#000000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="0.5"
-                    stroke="#000000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <circle
-                    cx="17"
-                    cy="12"
-                    r="0.5"
-                    stroke="#000000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div class="q-second-layer">
-                <h2 id="q-title">OOP : Удамшлын асуудал</h2>
-                <span id="q-description">
-                  Хэрвээ удамшсан классын байгуулагчийг дуудахад эцэг классын
-                  байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч
-                  дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч
-                  ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?
-                </span>
-              </div>
-              <hr />
-              <div class="q-third-layer">
-                <div class="up-down-vote">
-                  <svg
-                    width="30px"
-                    height="30px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 14.5L12 9.5L17 14.5"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span>20</span>
-                  <svg
-                    width="30px"
-                    height="30px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <!-- <rect width="24" height="24" fill="white" /> -->
-                    <path
-                      d="M17 9.5L12 14.5L7 9.5"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-
-                <div class="comment-count">
-                  <svg
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16 1H0V13H5L8 16L11 13H16V1ZM3 6H5V8H3V6ZM9 6H7V8H9V6ZM13 6H11V8H13V6Z"
-                      fill="#000000"
-                    />
-                  </svg>
-                  <span>46</span>
-                </div>
-                <div class="saved">
-                  <svg
-                    id="saved"
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 32 32"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-                  >
-                    <title>save-floppy</title>
-                    <desc>Created with Sketch Beta.</desc>
-                    <defs></defs>
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                      sketch:type="MSPage"
-                    >
-                      <g
-                        id="Icon-Set"
-                        sketch:type="MSLayerGroup"
-                        transform="translate(-152.000000, -515.000000)"
-                        fill="#000000"
-                      >
-                        <path
-                          d="M171,525 C171.552,525 172,524.553 172,524 L172,520 C172,519.447 171.552,519 171,519 C170.448,519 170,519.447 170,520 L170,524 C170,524.553 170.448,525 171,525 L171,525 Z M182,543 C182,544.104 181.104,545 180,545 L156,545 C154.896,545 154,544.104 154,543 L154,519 C154,517.896 154.896,517 156,517 L158,517 L158,527 C158,528.104 158.896,529 160,529 L176,529 C177.104,529 178,528.104 178,527 L178,517 L180,517 C181.104,517 182,517.896 182,519 L182,543 L182,543 Z M160,517 L176,517 L176,526 C176,526.553 175.552,527 175,527 L161,527 C160.448,527 160,526.553 160,526 L160,517 L160,517 Z M180,515 L156,515 C153.791,515 152,516.791 152,519 L152,543 C152,545.209 153.791,547 156,547 L180,547 C182.209,547 184,545.209 184,543 L184,519 C184,516.791 182.209,515 180,515 L180,515 Z"
-                          id="save-floppy"
-                          sketch:type="MSShapeGroup"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-              </div>
+              <question-card 
+                author="Yondonkhuu"
+                class-name="ICSI201"
+                date="2 өдрийн өмнө"
+                tags="Хичээл"
+                title="OOP : Удамшлын асуудлууд"
+                description="Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?"
+                votes="40"
+                comments="3">
+              </question-card>
               <section class="fourth-layer-comment">
                 <div class="comment-filter">
                   <select name="comments" id="comments">
@@ -346,377 +44,55 @@
                     <option value="most-liked">Их саналтай</option>
                   </select>
                 </div>
-                <div class="comment-item">
-                  <div class="comment-item-first-layer">
-                    <svg
-                      width="40px"
-                      height="40px"
-                      viewBox="0 0 24 24"
-                      fill="purple"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_15_82)">
-                        <rect width="24" height="24" fill="white" />
-                        <g filter="url(#filter0_d_15_82)">
-                          <path
-                            d="M14.3365 12.3466L14.0765 11.9195C13.9082 12.022 13.8158 12.2137 13.8405 12.4092C13.8651 12.6046 14.0022 12.7674 14.1907 12.8249L14.3365 12.3466ZM9.6634 12.3466L9.80923 12.8249C9.99769 12.7674 10.1348 12.6046 10.1595 12.4092C10.1841 12.2137 10.0917 12.022 9.92339 11.9195L9.6634 12.3466ZM4.06161 19.002L3.56544 18.9402L4.06161 19.002ZM19.9383 19.002L20.4345 18.9402L19.9383 19.002ZM16 8.5C16 9.94799 15.2309 11.2168 14.0765 11.9195L14.5965 12.7737C16.0365 11.8971 17 10.3113 17 8.5H16ZM12 4.5C14.2091 4.5 16 6.29086 16 8.5H17C17 5.73858 14.7614 3.5 12 3.5V4.5ZM7.99996 8.5C7.99996 6.29086 9.79082 4.5 12 4.5V3.5C9.23854 3.5 6.99996 5.73858 6.99996 8.5H7.99996ZM9.92339 11.9195C8.76904 11.2168 7.99996 9.948 7.99996 8.5H6.99996C6.99996 10.3113 7.96342 11.8971 9.40342 12.7737L9.92339 11.9195ZM9.51758 11.8683C6.36083 12.8309 3.98356 15.5804 3.56544 18.9402L4.55778 19.0637C4.92638 16.1018 7.02381 13.6742 9.80923 12.8249L9.51758 11.8683ZM3.56544 18.9402C3.45493 19.8282 4.19055 20.5 4.99996 20.5V19.5C4.70481 19.5 4.53188 19.2719 4.55778 19.0637L3.56544 18.9402ZM4.99996 20.5H19V19.5H4.99996V20.5ZM19 20.5C19.8094 20.5 20.545 19.8282 20.4345 18.9402L19.4421 19.0637C19.468 19.2719 19.2951 19.5 19 19.5V20.5ZM20.4345 18.9402C20.0164 15.5804 17.6391 12.8309 14.4823 11.8683L14.1907 12.8249C16.9761 13.6742 19.0735 16.1018 19.4421 19.0637L20.4345 18.9402Z"
-                            fill="#000000"
-                          />
-                        </g>
-                      </g>
-                      <defs>
-                        <filter
-                          id="filter0_d_15_82"
-                          x="2.55444"
-                          y="3.5"
-                          width="18.8911"
-                          height="19"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB"
-                        >
-                          <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha"
-                          />
-                          <feOffset dy="1" />
-                          <feGaussianBlur stdDeviation="0.5" />
-                          <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_15_82"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_15_82"
-                            result="shape"
-                          />
-                        </filter>
-                        <clipPath id="clip0_15_82">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <div class="name-and-date">
-                      <span id="name">Zeronith</span>
-                      <span id="date">Өнөөдөр</span>
-                    </div>
-                    <div class="pzd">
-                      <svg
-                        width="30px"
-                        height="30px"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect width="24" height="24" fill="white" />
-                        <circle
-                          cx="7"
-                          cy="12"
-                          r="0.5"
-                          stroke="#000000"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="0.5"
-                          stroke="#000000"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <circle
-                          cx="17"
-                          cy="12"
-                          r="0.5"
-                          stroke="#000000"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <span id="comment">
-                    Эхлээд 2 уулаа дуудагдана магадгүй зөв асуулт нь аль нь
-                    түрүүлж дуудагдах вэ гэсэн асуулт байхаа . Түрүүлж эцгийнх
-                    дуудагддаг учир нь эцэг классийн attribute-ууд түрүүлж
-                    хүүхэд классд тодорхойлогдох ёстой шүү дээ . Харин устгагч
-                    буюу Destructor дуудагдах үед эсрэгээрээ дуудагдана .
-                  </span>
-                  <div class="comment-item-second-layer">
-                    <div class="comment-up-down-vote">
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M7 14.5L12 9.5L17 14.5"
-                          stroke="#000"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>20</span>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M17 9.5L12 14.5L7 9.5"
-                          stroke="#000"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>3</span>
-                    </div>
-
-                    <div class="reply-count">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M16 1H0V13H5L8 16L11 13H16V1ZM3 6H5V8H3V6ZM9 6H7V8H9V6ZM13 6H11V8H13V6Z"
-                          fill="#000"
-                        />
-                      </svg>
-                      <span>1</span>
-                    </div>
-                  </div>
-                </div>
+              <comment-item
+                author="Bilguun"
+                class-name="ICSI201"
+                date="2 өдрийн өмнө"
+                comment="Би бас ойлгосонгүй ээ. Гэхдээ миний бодлоор удамшсан классын байгуулагч дуудагдах байх."
+                upvotes="15"
+                downvotes="2"
+                replies="2"
+              >
+              </comment-item>
+               <comment-item
+                author="Enguun"
+                class-name="ICSI201"
+                date="Өнөөдөр"
+                comment="@Bilguun Чи ойлгоогүй юм уу? Би ч бас ойлгоогүй л байна. Хаха"
+                upvotes="1"
+                downvotes="6"
+                replies="0"
+              >
+              </comment-item>
+               <comment-item
+                author="Yondonkhuu"
+                class-name="ICSI201"
+                date="Өнөөдөр"
+                comment="@Bilguun Баярлалаа бро. Чи мундаг *** шүү."
+                upvotes="1"
+                downvotes="6"
+                replies="0"
+              >
+              </comment-item>
               </section>
               <hr />
-              <section class="write-comment">
-                <svg
-                  width="40px"
-                  height="40px"
-                  viewBox="0 0 24 24"
-                  fill="purple"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_15_82)">
-                    <rect width="24" height="24" fill="white" />
-                    <g filter="url(#filter0_d_15_82)">
-                      <path
-                        d="M14.3365 12.3466L14.0765 11.9195C13.9082 12.022 13.8158 12.2137 13.8405 12.4092C13.8651 12.6046 14.0022 12.7674 14.1907 12.8249L14.3365 12.3466ZM9.6634 12.3466L9.80923 12.8249C9.99769 12.7674 10.1348 12.6046 10.1595 12.4092C10.1841 12.2137 10.0917 12.022 9.92339 11.9195L9.6634 12.3466ZM4.06161 19.002L3.56544 18.9402L4.06161 19.002ZM19.9383 19.002L20.4345 18.9402L19.9383 19.002ZM16 8.5C16 9.94799 15.2309 11.2168 14.0765 11.9195L14.5965 12.7737C16.0365 11.8971 17 10.3113 17 8.5H16ZM12 4.5C14.2091 4.5 16 6.29086 16 8.5H17C17 5.73858 14.7614 3.5 12 3.5V4.5ZM7.99996 8.5C7.99996 6.29086 9.79082 4.5 12 4.5V3.5C9.23854 3.5 6.99996 5.73858 6.99996 8.5H7.99996ZM9.92339 11.9195C8.76904 11.2168 7.99996 9.948 7.99996 8.5H6.99996C6.99996 10.3113 7.96342 11.8971 9.40342 12.7737L9.92339 11.9195ZM9.51758 11.8683C6.36083 12.8309 3.98356 15.5804 3.56544 18.9402L4.55778 19.0637C4.92638 16.1018 7.02381 13.6742 9.80923 12.8249L9.51758 11.8683ZM3.56544 18.9402C3.45493 19.8282 4.19055 20.5 4.99996 20.5V19.5C4.70481 19.5 4.53188 19.2719 4.55778 19.0637L3.56544 18.9402ZM4.99996 20.5H19V19.5H4.99996V20.5ZM19 20.5C19.8094 20.5 20.545 19.8282 20.4345 18.9402L19.4421 19.0637C19.468 19.2719 19.2951 19.5 19 19.5V20.5ZM20.4345 18.9402C20.0164 15.5804 17.6391 12.8309 14.4823 11.8683L14.1907 12.8249C16.9761 13.6742 19.0735 16.1018 19.4421 19.0637L20.4345 18.9402Z"
-                        fill="#000000"
-                      />
-                    </g>
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_15_82"
-                      x="2.55444"
-                      y="3.5"
-                      width="18.8911"
-                      height="19"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      />
-                      <feOffset dy="1" />
-                      <feGaussianBlur stdDeviation="0.5" />
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_15_82"
-                      />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_15_82"
-                        result="shape"
-                      />
-                    </filter>
-                    <clipPath id="clip0_15_82">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <input
-                  id="write-comment-input-field"
-                  type="text"
-                  placeholder="Сэтгэгдэл бичих..."
-                />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35px"
-                  height="35px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M11.5003 12H5.41872M5.24634 12.7972L4.24158 15.7986C3.69128 17.4424 3.41613 18.2643 3.61359 18.7704C3.78506 19.21 4.15335 19.5432 4.6078 19.6701C5.13111 19.8161 5.92151 19.4604 7.50231 18.7491L17.6367 14.1886C19.1797 13.4942 19.9512 13.1471 20.1896 12.6648C20.3968 12.2458 20.3968 11.7541 20.1896 11.3351C19.9512 10.8529 19.1797 10.5057 17.6367 9.81135L7.48483 5.24303C5.90879 4.53382 5.12078 4.17921 4.59799 4.32468C4.14397 4.45101 3.77572 4.78336 3.60365 5.22209C3.40551 5.72728 3.67772 6.54741 4.22215 8.18767L5.24829 11.2793C5.34179 11.561 5.38855 11.7019 5.407 11.8459C5.42338 11.9738 5.42321 12.1032 5.40651 12.231C5.38768 12.375 5.34057 12.5157 5.24634 12.7972Z"
-                    stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </section>
+             <write-comment placeholder="Сэтгэгдлээ үлдээгээрэй..."></write-comment>
             </article>
           </div>
         </div>
 
         <aside class="side-layout">
-          <section class="statistic">
-            <h3>Үзүүлэлт</h3>
-            <hr />
-            <div class="statistic-grid">
-              <div class="q-num">
-                <div class="q-txt">
-                  <p id="question-txt">Q : Questions</p>
-                  <p id="question-num">7</p>
-                </div>
-              </div>
-
-              <div class="a-num">
-                <div class="a-txt">
-                  <p id="answer-txt">A : Answer</p>
-                  <p id="answer-num">34</p>
-                </div>
-              </div>
-
-              <div class="r-num">
-                <div class="r-txt">
-                  <p id="rank-txt">R : Rank</p>
-                  <p id="rank-num">13</p>
-                </div>
-              </div>
-
-              <div class="b-num">
-                <div class="b-txt">
-                  <p id="badges-txt">B : Badges</p>
-                  <p id="badges-num">2</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="leaderboard">
-            <h3>Leaderboard</h3>
-            <hr />
-            <ul>
-              <li class="top1">
-                <div class="rank-left">
-                  <img
-                    src="./assets/golden-medal.png"
-                    alt="gold"
-                    class="medal"
-                  />
-                  <img src="./assets/avatar1.png" alt="avatar" class="avatar" />
-                  <div class="info">
-                    <span class="name">Г.Ёндонжамц</span>
-                    <span class="aura">2300 aura</span>
-                  </div>
-                </div>
-                <svg
-                  class="arrow"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M9.5 7L14.5 12L9.5 17"
-                    stroke="#000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </li>
-
-              <li class="top2">
-                <div class="rank-left">
-                  <img
-                    src="./assets/silver-medal.png"
-                    alt="silver"
-                    class="medal"
-                  />
-                  <img src="./assets/avatar2.png" alt="avatar" class="avatar" />
-                  <div class="info">
-                    <span class="name">Билгүүн</span>
-                    <span class="aura">2000 aura</span>
-                  </div>
-                </div>
-                <svg
-                  class="arrow"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M9.5 7L14.5 12L9.5 17"
-                    stroke="#000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </li>
-
-              <li class="top3">
-                <div class="rank-left">
-                  <img
-                    src="./assets/bronze-medal.png"
-                    alt="bronze"
-                    class="medal"
-                  />
-                  <img src="./assets/avatar3.png" alt="avatar" class="avatar" />
-                  <div class="info">
-                    <span class="name">Энгүүн</span>
-                    <span class="aura">1990 aura</span>
-                  </div>
-                </div>
-                <svg
-                  class="arrow"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M9.5 7L14.5 12L9.5 17"
-                    stroke="#000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </section>
+         <user-statistics
+          questions="69"
+          answers="34"
+          rank="1"
+          badges="2"
+>        </user-statistics>
+         <leaderboard-section
+  gold="Ёндонжамц" gold-aura="20000"
+  silver="Билгүүн" silver-aura="2690"
+  bronze="Энгүүн" bronze-aura="1990"
+></leaderboard-section>
         </aside>
       </main>
     </div>

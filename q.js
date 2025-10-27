@@ -3,7 +3,7 @@ class QuestionCard extends HTMLElement {
     super();
   }
  static get observedAttributes() {
-    return ['author', 'date', 'tags', 'title', 'description', 'votes', 'comments'];
+    return ['author', 'clas-name', 'date', 'tags', 'title', 'description', 'votes', 'comments'];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {

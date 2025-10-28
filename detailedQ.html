@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/home-landing-detailedQ.css" />
-        <script src="./a.js" defer></script>
+       <!-- <script src="./a.js" defer></script>--> 
     <script src="./q.js" defer></script>
     <script src="./navbar.js" deref></script>
     <script src="./write-comment.js"></script>
     <script src="./statistic.js"></script>
         <script src="./leaderboard.js"></script>
+                <script src="./test.js"></script>
+
+
+
+     
 
   </head>
 
@@ -44,6 +49,64 @@
                     <option value="most-liked">Их саналтай</option>
                   </select>
                 </div>
+
+
+      
+
+<div class="comment-section">
+  <div class="comment">
+    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
+          </svg>
+    <div class="comment-body">
+      <div class="comment-header">Bilguun</div>
+      <div class="comment-text">
+        Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?
+      </div>
+      <div class="comment-footer">
+        <span>2 hrs</span>
+        <button class="upvote">Upvote (4)</button>
+        <button class="downvote">Downvote (2)</button>
+        <button class="reply-btn">Reply (2)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="comment reply">
+    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
+          </svg>
+    <div class="comment-body">
+      <div class="comment-header">Erdene</div>
+      <div class="comment-text">This is a reply!</div>
+      <div class="comment-footer">
+        <span>2 hrs</span>
+        <button class="upvote">Upvote (4)</button>
+        <button class="downvote">Downvote (2)</button>
+        <button class="reply-btn">Reply (2)</button>
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+  <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
+          </svg>
+    <div class="comment-body">
+      <div class="comment-header">Bilguun</div>
+      <div class="comment-text">
+  Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?
+      </div>
+      <div class="comment-footer">
+        <span>2 hrs</span>
+        <button class="upvote">Upvote (4)</button>
+        <button class="downvote">Downvote (2)</button>
+        <button class="reply-btn">Reply (2)</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               <comment-item
                 author="Bilguun"
                 class-name="ICSI201"
@@ -76,7 +139,7 @@
               </comment-item>
               </section>
               <hr />
-             <write-comment placeholder="Сэтгэгдлээ үлдээгээрэй..."></write-comment>
+             <write-comment></write-comment>
             </article>
           </div>
         </div>

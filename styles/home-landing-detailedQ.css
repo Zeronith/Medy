@@ -295,6 +295,94 @@ a {
 }
 
 /* ==================== COMMENTS SECTION ==================== */
+
+
+
+
+
+
+
+
+  .comment-section {
+  
+  margin-top: var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  }
+  .comment {
+    display: flex;
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .comment-body {
+    flex: 1;
+  }
+
+  .comment-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .comment-text {
+    display: inline-block;
+    margin-bottom: 5px;
+    background-color: rgb(244, 241, 241);
+    border-radius: 10px;
+  }
+
+  .comment-footer {
+    font-size: 12px;
+    color: #65676b;
+  }
+
+  .reply {
+    margin-left: 50px;
+  }
+
+  /* Optional hover effect */
+  .comment:hover {
+    background: #f0f2f5;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
 .fourth-layer-comment {
   width: 100%;
   margin-top: var(--spacing-2xl);
@@ -370,7 +458,7 @@ a {
     gap: 0;
   }
 }
-
+*/
 .write-comment {
   display: flex;
   align-items: center;

@@ -1,85 +1,62 @@
-class LeaderboardSection extends HTMLElement {
+class WriteComment extends HTMLElement {
   constructor() {
     super();
   }
 
-  static get observedAttributes() {
-    return [
-      'gold', 'gold-aura',
-      'silver', 'silver-aura',
-      'bronze', 'bronze-aura'
-    ];
-  }
-
-  attributeChangedCallback() {
-    this.render();
-  }
-
   connectedCallback() {
     this.render();
+    this.attachEvents();
   }
 
   render() {
-    const users = [
-      {
-        rank: 'gold',
-        name: this.getAttribute('gold') || '—',
-        aura: this.getAttribute('gold-aura') || '0',
-        medal: 'golden-medal.png',
-        avatar: 'avatar1.png',
-      },
-      {
-        rank: 'silver',
-        name: this.getAttribute('silver') || '—',
-        aura: this.getAttribute('silver-aura') || '0',
-        medal: 'silver-medal.png',
-        avatar: 'avatar2.png',
-      },
-      {
-        rank: 'bronze',
-        name: this.getAttribute('bronze') || '—',
-        aura: this.getAttribute('bronze-aura') || '0',
-        medal: 'bronze-medal.png',
-        avatar: 'avatar3.png',
-      },
-    ];
-
     this.innerHTML = `
-      <section class="leaderboard">
-        <h3>Leaderboard</h3>
-        <hr />
-        <ul>
-          ${users.map((u, i) => `
-            <li class="top${i + 1}">
-              <div class="rank-left">
-                <img src="./assets/${u.medal}" alt="${u.rank}" class="medal" />
-                <img src="./assets/${u.avatar}" alt="avatar" class="avatar" />
-                <div class="info">
-                  <span class="name">${u.name}</span>
-                  <span class="aura">${u.aura} aura</span>
-                </div>
-              </div>
-              <svg
-                class="arrow"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M9.5 7L14.5 12L9.5 17"
-                  stroke="#000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+    <section class="write-comment">
+               <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
+          </svg>
+                <input
+                  id="write-comment-input-field"
+                  type="text"
+                  placeholder="Сэтгэгдэл бичих..."
                 />
-              </svg>
-            </li>
-          `).join('')}
-        </ul>
-      </section>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.5003 12H5.41872M5.24634 12.7972L4.24158 15.7986C3.69128 17.4424 3.41613 18.2643 3.61359 18.7704C3.78506 19.21 4.15335 19.5432 4.6078 19.6701C5.13111 19.8161 5.92151 19.4604 7.50231 18.7491L17.6367 14.1886C19.1797 13.4942 19.9512 13.1471 20.1896 12.6648C20.3968 12.2458 20.3968 11.7541 20.1896 11.3351C19.9512 10.8529 19.1797 10.5057 17.6367 9.81135L7.48483 5.24303C5.90879 4.53382 5.12078 4.17921 4.59799 4.32468C4.14397 4.45101 3.77572 4.78336 3.60365 5.22209C3.40551 5.72728 3.67772 6.54741 4.22215 8.18767L5.24829 11.2793C5.34179 11.561 5.38855 11.7019 5.407 11.8459C5.42338 11.9738 5.42321 12.1032 5.40651 12.231C5.38768 12.375 5.34057 12.5157 5.24634 12.7972Z"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </section>
     `;
+  }
+
+  attachEvents() {
+    const input = this.querySelector('#comment-input');
+    const send = this.querySelector('#send-comment');
+
+    send.addEventListener('click', () => {
+      const text = input.value.trim();
+      if (!text) return;
+      this.dispatchEvent(new CustomEvent('comment', { detail: { text }, bubbles: true }));
+      input.value = '';
+    });
+
+    input.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') send.click();
+    });
   }
 }
 
-customElements.define('leaderboard-section', LeaderboardSection);
+customElements.define('write-comment', WriteComment);
+
+
+
+

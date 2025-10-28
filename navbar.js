@@ -8,9 +8,9 @@ class MedyNavbar extends HTMLElement {
   }
 
   render() {
-    const username = this.getAttribute("username"); 
+    const username = this.getAttribute("username");
     const loggedIn = !!username;
- 
+
     this.innerHTML = `
       <nav>
         <div class="left-nav">
@@ -18,15 +18,14 @@ class MedyNavbar extends HTMLElement {
             <img id="medy-logo" src="./assets/medy-logo.png" alt="Medy Logo">
            
             </img>
-            <span id="logo-txt">MEDY</span>
           </a>
-
+ 
           <div class="nav-btn-container">
             <button id="ask-question-btn" type="button">Q Асуух</button>
             <button id="my-class-btn" type="button">Миний бүлгүүд</button>
           </div>
         </div>
-
+ 
         <div class="slogan-and-search">
           <div class="search-field-group">
             <input type="search" id="search-field" placeholder="Хүссэн зүйлээ хай" />
@@ -36,7 +35,7 @@ class MedyNavbar extends HTMLElement {
             </svg>
           </div>
         </div>
-
+ 
         <div class="right-nav">
           <div class="balance-container">
             <svg
@@ -59,9 +58,9 @@ class MedyNavbar extends HTMLElement {
                   fill="#000000"
                 />
               </svg>
-            <span id="balance-txt">${this.getAttribute('balance') || '0'}</span>
+            <span id="balance-txt">${this.getAttribute("balance") || "0"}</span>
           </div>
-
+ 
               <label class="switch">
           <input type="checkbox" />
           <span class="slider">
@@ -71,20 +70,27 @@ class MedyNavbar extends HTMLElement {
             </svg>
           </span>
         </label>
-
+ 
           ${
             loggedIn
               ? `
                    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
           </svg>
-          <a href="./index.html">
-            <span id="username">${this.getAttribute('username') || 'User'}</span>
-          </a>
+                   <span id="username">${username}</span>
+                 `
+              : `<button id="login-btn" type="button">
+                   <a href="./login.html">Нэвтрэх</a>
+                 </button>`
+          }
+         
+         
+ 
+         
         </div>
       </nav>
-    `}
+    `;
   }
 }
 
-customElements.define('medy-navbar', MedyNavbar)
+customElements.define("medy-navbar", MedyNavbar);

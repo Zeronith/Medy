@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/login.css" />
+    <script src="./login.js" defer></script>
+
   </head>
   <body>
     <div class="main-container">
@@ -147,44 +149,7 @@
       </header>
       <main>
         <div class="main-layout">
-          <section class="login">
-            <h2>Нэвтрэх</h2>
-            <!-- <form id="login-form" autocomplete="off"> -->
-            <div id="login-form">
-              <div class="form-group">
-                <label for="sisi-id">SISI ID</label>
-                <input
-                  type="text"
-                  id="sisi-id"
-                  name="sisi_id"
-                  placeholder="Таны SISI ID"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="password">Нууц үг</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="••••••••"
-                  required
-                />
-              </div>
-
-              <div class="form-options">
-                <label class="remember">
-                  <input type="checkbox" name="remember_me" />
-                  Намайг сана
-                </label>
-              </div>
-
-              <a href="./home.html">
-                <button id="submit-btn">Нэвтрэх</button>
-              </a>
-            </div>
-          </section>
+          <login-form> </login-form>
         </div>
       </main>
     </div>

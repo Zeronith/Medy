@@ -8,7 +8,7 @@ class MedyNavbar extends HTMLElement {
   }
 
   render() {
-        const username = this.getAttribute("username"); // if not present, user not logged in
+        const username = this.getAttribute("username"); 
     const loggedIn = !!username;
  
     this.innerHTML = `
@@ -61,29 +61,15 @@ class MedyNavbar extends HTMLElement {
             <span id="balance-txt">${this.getAttribute('balance') || '0'}</span>
           </div>
 
-           <svg
-              fill="#000000"
-              height="40px"
-              width="40px"
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 384 384"
-              xml:space="preserve"
-              alt="icon of theme switching "
-            >
-              <g>
-                <g>
-                  <path
-                    d="M311.576,148.336l-32-136C277.872,5.112,271.424,0,264,0H120c-7.424,0-13.872,5.112-15.576,12.336l-32,136c-1.12,4.76,0,9.768,3.04,13.6C78.496,165.768,83.112,168,88,168h88v184h-48c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h128
-      c8.832,0,16-7.168,16-16c0-8.832-7.168-16-16-16h-48V168h16v24c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-24h40
-      c4.888,0,9.504-2.232,12.536-6.064C311.576,158.104,312.696,153.096,311.576,148.336z M108.2,136l24.472-104h118.656L275.8,136
-      H108.2z"
-                  />
-                </g>
-              </g>
+              <label class="switch">
+          <input type="checkbox" />
+          <span class="slider">
+            <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
             </svg>
+          </span>
+        </label>
 
           ${
             loggedIn

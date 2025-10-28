@@ -566,6 +566,14 @@ a {
   color: var(--primary-black);
 }
 
+
+
+.badge-icon {
+  display: inline-block;
+  margin-left: var(--spacing);
+  font-size: var(--font-3xl);
+}
+
 /* ==================== LEADERBOARD ==================== */
 .leaderboard {
   background: var(--primary-white);

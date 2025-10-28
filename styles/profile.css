@@ -140,43 +140,67 @@
     }
 
     /* ==================== SIDEBAR ==================== */
-    .statistic {
-    background: var(--primary-white);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-2xl);
-    box-shadow: var(--shadow-sm);
+    .my-classes{
+        background-color: var(--primary-white);
+        border: var(--medium-gray);
+    }
+    .my-classes h3 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color:var(--dark-gray);
+      border-bottom: 2px solid #0078d7;
+      display: inline-block;
+      padding-bottom: 5rem;
     }
 
-    .statistic h3 {
-    font-size: var(--font-lg);
-    font-weight: 700;
-    margin-bottom: var(--spacing-lg);
-    color: var(--primary-black);
+    .my-class {
+      background-color: #f9fafc;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: box-shadow 0.3s ease;
     }
 
-    .stat-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md) 0;
-    border-bottom: 1px solid var(--medium-gray);
+    .my-class:hover {
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     }
 
-    .stat-item:last-child {
-    border-bottom: none;
+    .class-info {
+      display: flex;
+      flex-direction: column;
     }
 
-    .stat-label {
-    font-size: var(--font-base);
-    color: var(--text-gray);
-    font-weight: 500;
+    .class-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #222;
     }
 
-    .stat-value {
-    font-size: var(--font-lg);
-    font-weight: 700;
-    color: var(--primary-black);
+    .class-id {
+      font-size: 0.95rem;
+      color: #666;
     }
+
+    .class-have-people {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .class-have-people svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .class-have-people span {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
 
     .recent-activity {
     background: var(--primary-white);

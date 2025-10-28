@@ -85,7 +85,7 @@ class MedyNavbar extends HTMLElement {
           <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
           </svg>
-          <a href="./index.html">
+          <a href="./profile.html">
             <span id="username">${this.getAttribute('username') || 'User'}</span>
           </a>
         </div>

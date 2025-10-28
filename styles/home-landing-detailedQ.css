@@ -96,6 +96,7 @@ hr {
   flex-direction: column;
   gap: var(--spacing-2xl);
   padding-top: var(--spacing-6xl);
+  margin-bottom: var(--spacing-6xl);
 }
 
 .q {
@@ -491,6 +492,7 @@ a {
   top: var(--spacing-6xl);
   align-self: flex-start;
   height: fit-content;
+  margin-bottom: var(--spacing-6xl);
 }
 
 /* ==================== STATISTICS ==================== */

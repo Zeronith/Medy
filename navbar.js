@@ -8,9 +8,9 @@ class MedyNavbar extends HTMLElement {
   }
 
   render() {
-        const username = this.getAttribute("username"); 
+    const username = this.getAttribute("username");
     const loggedIn = !!username;
- 
+
     this.innerHTML = `
       <nav>
         <div class="left-nav">
@@ -19,13 +19,13 @@ class MedyNavbar extends HTMLElement {
            
             </img>
           </a>
-
+ 
           <div class="nav-btn-container">
             <button id="ask-question-btn" type="button">Q Асуух</button>
             <button id="my-class-btn" type="button">Миний бүлгүүд</button>
           </div>
         </div>
-
+ 
         <div class="slogan-and-search">
           <div class="search-field-group">
             <input type="search" id="search-field" placeholder="Хүссэн зүйлээ хай" />
@@ -35,7 +35,7 @@ class MedyNavbar extends HTMLElement {
             </svg>
           </div>
         </div>
-
+ 
         <div class="right-nav">
           <div class="balance-container">
             <svg
@@ -58,9 +58,9 @@ class MedyNavbar extends HTMLElement {
                   fill="#000000"
                 />
               </svg>
-            <span id="balance-txt">${this.getAttribute('balance') || '0'}</span>
+            <span id="balance-txt">${this.getAttribute("balance") || "0"}</span>
           </div>
-
+ 
               <label class="switch">
           <input type="checkbox" />
           <span class="slider">
@@ -70,7 +70,7 @@ class MedyNavbar extends HTMLElement {
             </svg>
           </span>
         </label>
-
+ 
           ${
             loggedIn
               ? `
@@ -85,7 +85,7 @@ class MedyNavbar extends HTMLElement {
           }
          
          
-
+ 
          
         </div>
       </nav>
@@ -93,4 +93,4 @@ class MedyNavbar extends HTMLElement {
   }
 }
 
-customElements.define('medy-navbar', MedyNavbar);
+customElements.define("medy-navbar", MedyNavbar);

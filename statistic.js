@@ -20,9 +20,15 @@ class UserStatistics extends HTMLElement {
       questions: this.getAttribute('questions') || '0',
       answers: this.getAttribute('answers') || '0',
       rank: this.getAttribute('rank') || '0',
-      badges: this.getAttribute('badges') || '0',
+    badges: parseInt(this.getAttribute('badges') || '0', 10),
     };
 
+     let badgeIcons = '';
+  for (let i = 0; i < stats.badges; i++) {
+    badgeIcons += `<span class="badge-icon"><svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
+          </svg></span>`; // you can replace with your SVG
+  }
     this.innerHTML = `
        <section class="statistic">
             <h3>Үзүүлэлт</h3>
@@ -52,7 +58,7 @@ class UserStatistics extends HTMLElement {
               <div class="b-num">
                 <div class="b-txt">
                   <p id="badges-txt">B : Badges</p>
-                  <p id="badges-num">${stats.badges}</p>
+                  <p id="badges-num">${stats.badges} ${badgeIcons}</p>
                 </div>
               </div>
             </div>

@@ -8,6 +8,7 @@ class MedyNavbar extends HTMLElement {
   }
 
   render() {
+ 
     this.innerHTML = `
       <nav>
         <div class="left-nav">
@@ -15,7 +16,6 @@ class MedyNavbar extends HTMLElement {
             <img id="medy-logo" src="./assets/medy-logo.png" alt="Medy Logo">
            
             </img>
-            <span id="logo-txt">MEDY</span>
           </a>
 
           <div class="nav-btn-container">
@@ -88,6 +88,10 @@ class MedyNavbar extends HTMLElement {
           <a href="./index.html">
             <span id="username">${this.getAttribute('username') || 'User'}</span>
           </a>
+        </div>
+          </div>
+
+         
         </div>
       </nav>
     `;

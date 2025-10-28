@@ -53,14 +53,7 @@ nav {
   #logo-text {
     width: 4rem;
   }
-  #logo-txt {
-    font-size: var(--font-2xl);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    letter-spacing: var(--spacing-xs);
-    flex-shrink: 0;
-    color: var(--primary-black);
-  }
+  
 
   /* Balance display */
   .balance-container {
@@ -70,7 +63,6 @@ nav {
     gap: var(--spacing-xs);
     padding: var(--spacing-xs) var(--spacing-md);
     border-radius: var(--radius-lg);
-    background: var(--light-gray);
 
     svg {
       width: 2rem;

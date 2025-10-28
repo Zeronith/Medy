@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+    </style>
+</head>
+<body>
+ <div id="ask-Q" class="ask-Q">
+  <div class="ask-modal-content">
+    <div class="modal-header">
+      <h2>Асуулт асуух</h2>
+      <button id="close-modal-btn" class="close-btn">&times;</button>
+    </div>
+
+    <label for="class-select">Класс сонгох:</label>
+    <select id="class-select">
+      <option value="">-- ICSI201 --</option>
+      <option value="frontend">ICSI202</option>
+      <option value="backend">PHIL102</option>
+      <option value="design">ICSI169</option>
+      <option value="ai">ICSI6969</option>
+    </select>
+
+    <label for="question-head">Гарчиг:</label>
+    <input type="text" id="question-head" placeholder="Гарчиг оруулна уу">
+
+    <label for="question-desc">Тайлбар:</label>
+    <textarea id="question-desc" placeholder="Асуултын дэлгэрэнгүй бичээрэй..."></textarea>
+
+    <div class="option-row">
+      <label>
+        <input type="checkbox" id="anonymous-check"> Нэрээ нууцлах
+      </label>
+      <label>
+        <input type="checkbox" id="disable-comments"> Сэтгэгдэл хаах
+      </label>
+    </div>
+
+    <div class="btn-row">
+      <button id="cancel-question">Болих</button>
+      <button id="publish-question">Нийтлэх</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

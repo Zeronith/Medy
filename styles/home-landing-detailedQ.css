@@ -95,7 +95,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2xl);
-  margin-top: var(--spacing-6xl);
+  padding-top: var(--spacing-6xl);
 }
 
 .q {
@@ -103,9 +103,8 @@ hr {
   flex-direction: column;
   padding: var(--spacing-2xl);
   background: var(--primary-white);
-  box-shadow: var(--shadow-sm);
   border-radius: var(--radius-2xl);
-  border: 1px solid var(--light-gray);
+  border: none;
 
   .q-first-layer {
     display: flex;
@@ -256,6 +255,10 @@ main {
   justify-content: space-between;
   align-items: center;
 padding-top: var(--spacing-4xl);
+#slogan {
+  color: rgb(0, 0, 0);
+  padding-top: var(--spacing-5xl);
+}
 }
 
 a {
@@ -314,7 +317,7 @@ a {
     display: flex;
     margin-bottom: 15px;
     background: #fff;
-    padding: 10px;
+    padding: 20px;
     border-radius: 8px;
   }
 
@@ -350,10 +353,6 @@ a {
     margin-left: 50px;
   }
 
-  /* Optional hover effect */
-  .comment:hover {
-    background: #f0f2f5;
-  }
 
 
 

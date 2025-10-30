@@ -14,6 +14,7 @@
     <script src="./statistic.js"></script>
         <script src="./leaderboard.js"></script>
         <script src="./write-comment.js"></script>
+        <script src="./comment-item.js"></script>
 
 
   </head>
@@ -49,59 +50,53 @@
 
 
       
+<comment-thread
+  data-comments='[
+    {
+      "name": "Bilguun",
+      "text": "Хэрвээ удамшсан классын байгуулагчийг дуудахад...",
+      "time": "2 hrs",
+      "upvotes": 4,
+      "downvotes": 2,
+      "replies": [
+        {
+          "name": "Yondonkhuu",
+          "text": "Заза хө reply reply gang gang",
+          "time": "2 hrs",
+          "upvotes": 4,
+          "downvotes": 2,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "name": "Bilguun",
+      "text": "Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад...",
+      "time": "2 hrs",
+      "upvotes": 4,
+      "downvotes": 2,
+      "replies": []
+    },
+    {
+      "name": "Bilguun",
+      "text": "Хэрвээ удамшсан классын байгуулагчийг дуудахад...",
+      "time": "2 hrs",
+      "upvotes": 4,
+      "downvotes": 2,
+      "replies": [
+        {
+          "name": "Yondonkhuu",
+          "text": "Заза хө reply reply gang gang",
+          "time": "2 hrs",
+          "upvotes": 4,
+          "downvotes": 2,
+          "replies": []
+        }
+      ]
+    }
+  ]'>
+</comment-thread>
 
-<div class="comment-section">
-  <div class="comment">
-    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
-          </svg>
-    <div class="comment-body">
-      <div class="comment-header">Bilguun</div>
-      <div class="comment-text">
-        Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?
-      </div>
-      <div class="comment-footer">
-        <span>2 hrs</span>
-        <button class="upvote">Upvote (4)</button>
-        <button class="downvote">Downvote (2)</button>
-        <button class="reply-btn">Reply (2)</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="comment reply">
-    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
-          </svg>
-    <div class="comment-body">
-      <div class="comment-header">Yondonkhuu</div>
-      <div class="comment-text">reply reply gang gang</div>
-      <div class="comment-footer">
-        <span>2 hrs</span>
-        <button class="upvote">Upvote (4)</button>
-        <button class="downvote">Downvote (2)</button>
-        <button class="reply-btn">Reply (2)</button>
-      </div>
-    </div>
-  </div>
-  <div class="comment">
-  <svg width="40px" height="40px" viewBox="0 0 24 24" fill="purple" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="purple" opacity="0.1"></circle>
-          </svg>
-    <div class="comment-body">
-      <div class="comment-header">Bilguun</div>
-      <div class="comment-text">
-  Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?
-      </div>
-      <div class="comment-footer">
-        <span>2 hrs</span>
-        <button class="upvote">Upvote (4)</button>
-        <button class="downvote">Downvote (2)</button>
-        <button class="reply-btn">Reply (2)</button>
-      </div>
-    </div>
-  </div>
-</div>
 
               </section>
               <hr />

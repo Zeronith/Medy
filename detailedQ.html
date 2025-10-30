@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/home-landing-detailedQ.css" />
-       <!-- <script src="./a.js" defer></script>--> 
-    <script src="./q.js" defer></script>
-    <script src="./navbar.js" deref></script>
-    <script src="./write-comment.js"></script>
-    <script src="./statistic.js"></script>
-        <script src="./leaderboard.js"></script>
-        <script src="./write-comment.js"></script>
-        <script src="./comment-item.js"></script>
-
-
+    <!-- <script src="./a.js" defer></script>-->
+    <script src="./components/q.js" defer></script>
+    <script src="./components/navbar.js" deref></script>
+    <script src="./components/write-comment.js"></script>
+    <script src="./components/statistic.js"></script>
+    <script src="./components/leaderboard.js"></script>
+    <script src="./components/write-comment.js"></script>
   </head>
 
   <body>
@@ -29,7 +26,7 @@
         <div class="main-layout">
           <div class="news-feed">
             <article class="q">
-              <question-card 
+              <question-card
                 author="Yondonkhuu"
                 class-name="ICSI201"
                 date="2 өдрийн өмнө"
@@ -37,7 +34,8 @@
                 title="OOP : Удамшлын асуудлууд"
                 description="Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?"
                 votes="40"
-                comments="3">
+                comments="3"
+              >
               </question-card>
               <section class="fourth-layer-comment">
                 <div class="comment-filter">
@@ -48,79 +46,127 @@
                   </select>
                 </div>
 
+                <div class="comment-section">
+                  <div class="comment">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="purple"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="purple"
+                        opacity="0.1"
+                      ></circle>
+                    </svg>
+                    <div class="comment-body">
+                      <div class="comment-header">Bilguun</div>
+                      <div class="comment-text">
+                        Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж
+                        эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан
+                        классын байгуулагч дуудагдах уу ? . Энийг сая
+                        интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад
+                        өгөх хүн байна уу ?
+                      </div>
+                      <div class="comment-footer">
+                        <span>2 hrs</span>
+                        <button class="upvote">Upvote (4)</button>
+                        <button class="downvote">Downvote (2)</button>
+                        <button class="reply-btn">Reply (2)</button>
+                      </div>
+                    </div>
+                  </div>
 
-      
-<comment-thread
-  data-comments='[
-    {
-      "name": "Bilguun",
-      "text": "Хэрвээ удамшсан классын байгуулагчийг дуудахад...",
-      "time": "2 hrs",
-      "upvotes": 4,
-      "downvotes": 2,
-      "replies": [
-        {
-          "name": "Yondonkhuu",
-          "text": "Заза хө reply reply gang gang",
-          "time": "2 hrs",
-          "upvotes": 4,
-          "downvotes": 2,
-          "replies": []
-        }
-      ]
-    },
-    {
-      "name": "Bilguun",
-      "text": "Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад... Хэрвээ удамшсан классын байгуулагчийг дуудахад...",
-      "time": "2 hrs",
-      "upvotes": 4,
-      "downvotes": 2,
-      "replies": []
-    },
-    {
-      "name": "Bilguun",
-      "text": "Хэрвээ удамшсан классын байгуулагчийг дуудахад...",
-      "time": "2 hrs",
-      "upvotes": 4,
-      "downvotes": 2,
-      "replies": [
-        {
-          "name": "Yondonkhuu",
-          "text": "Заза хө reply reply gang gang",
-          "time": "2 hrs",
-          "upvotes": 4,
-          "downvotes": 2,
-          "replies": []
-        }
-      ]
-    }
-  ]'>
-</comment-thread>
-
-
+                  <div class="comment reply">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="purple"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="purple"
+                        opacity="0.1"
+                      ></circle>
+                    </svg>
+                    <div class="comment-body">
+                      <div class="comment-header">Yondonkhuu</div>
+                      <div class="comment-text">reply reply gang gang</div>
+                      <div class="comment-footer">
+                        <span>2 hrs</span>
+                        <button class="upvote">Upvote (4)</button>
+                        <button class="downvote">Downvote (2)</button>
+                        <button class="reply-btn">Reply (2)</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="purple"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="purple"
+                        opacity="0.1"
+                      ></circle>
+                    </svg>
+                    <div class="comment-body">
+                      <div class="comment-header">Bilguun</div>
+                      <div class="comment-text">
+                        Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж
+                        эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан
+                        классын байгуулагч дуудагдах уу ? . Энийг сая
+                        интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад
+                        өгөх хүн байна уу ?Хэрвээ удамшсан классын байгуулагчийг
+                        дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу
+                        эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг
+                        сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад
+                        өгөх хүн байна уу ?
+                      </div>
+                      <div class="comment-footer">
+                        <span>2 hrs</span>
+                        <button class="upvote">Upvote (4)</button>
+                        <button class="downvote">Downvote (2)</button>
+                        <button class="reply-btn">Reply (2)</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </section>
               <hr />
-             <write-comment></write-comment>
+              <write-comment></write-comment>
             </article>
           </div>
         </div>
 
         <aside class="side-layout">
-         <user-statistics
-          questions="69"
-          answers="34"
-          rank="1"
-          badges="4"
->        </user-statistics>
-         <leaderboard-section
-  gold="Ёндонжамц" gold-aura="20000"
-  silver="Билгүүн" silver-aura="2690"
-  bronze="Энгүүн" bronze-aura="1990"
-></leaderboard-section>
+          <user-statistics questions="69" answers="34" rank="1" badges="4">
+          </user-statistics>
+          <leaderboard-section
+            gold="Ёндонжамц"
+            gold-aura="20000"
+            silver="Билгүүн"
+            silver-aura="2690"
+            bronze="Энгүүн"
+            bronze-aura="1990"
+          ></leaderboard-section>
         </aside>
       </main>
     </div>
-        <ask-question-modal></ask-question-modal>
-
+    <ask-question-modal></ask-question-modal>
   </body>
 </html>

@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/home-landing-detailedQ.css" />
-    <script src="./q.js"></script>
-    <script src="./navbar.js" defer></script>
-    <script src="./a.js" defer></script>
-    <script src="./statistic.js" defer></script>
-        <script src="./leaderboard.js" defer></script>
-        <script src="./main.js" defer></script>
-        <script src="./askQ.js" defer></script>
-      
-
+    <script src="./components/q.js"></script>
+    <script src="./components/navbar.js" defer></script>
+    <script src="./components/a.js" defer></script>
+    <script src="./components/statistic.js" defer></script>
+    <script src="./components/leaderboard.js" defer></script>
+    <script src="./main.js" defer></script>
+    <script src="./components/askQ.js" defer></script>
   </head>
 
   <body>
     <div class="main-container">
       <header>
-        <medy-navbar username="boldoo"balance="8969"></medy-navbar>
+        <medy-navbar username="boldoo" balance="8969"></medy-navbar>
       </header>
 
       <!-- Main heseg -->
@@ -30,7 +28,7 @@
         <div class="main-layout">
           <div class="news-feed">
             <a href="./detailedQ.html">
-              <question-card 
+              <question-card
                 author="Bilguun"
                 class-name="ICSI6969"
                 date="2 өдрийн өмнө"
@@ -38,11 +36,12 @@
                 title="OOP : Удамшлын асуудлууд"
                 description="Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?"
                 votes="40"
-                comments="46">
+                comments="46"
+              >
               </question-card>
             </a>
-             <a href="./detailedQ.html">
-              <question-card 
+            <a href="./detailedQ.html">
+              <question-card
                 author="Bilguun"
                 class-name="ICSI6969"
                 date="2 өдрийн өмнө"
@@ -50,11 +49,12 @@
                 title="OOP : Удамшлын асуудлууд"
                 description="Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?"
                 votes="40"
-                comments="46">
+                comments="46"
+              >
               </question-card>
             </a>
-             <a href="./detailedQ.html">
-              <question-card 
+            <a href="./detailedQ.html">
+              <question-card
                 author="Bilguun"
                 class-name="ICSI6969"
                 date="2 өдрийн өмнө"
@@ -62,11 +62,12 @@
                 title="OOP : Удамшлын асуудлууд"
                 description="Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?"
                 votes="40"
-                comments="46">
+                comments="46"
+              >
               </question-card>
             </a>
-             <a href="./detailedQ.html">
-              <question-card 
+            <a href="./detailedQ.html">
+              <question-card
                 author="Bilguun"
                 class-name="ICSI6969"
                 date="2 өдрийн өмнө"
@@ -74,11 +75,12 @@
                 title="OOP : Удамшлын асуудлууд"
                 description="Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?"
                 votes="40"
-                comments="46">
+                comments="46"
+              >
               </question-card>
             </a>
-             <a href="./detailedQ.html">
-              <question-card 
+            <a href="./detailedQ.html">
+              <question-card
                 author="Bilguun"
                 class-name="ICSI6969"
                 date="2 өдрийн өмнө"
@@ -86,28 +88,27 @@
                 title="OOP : Удамшлын асуудлууд"
                 description="Хэрвээ удамшсан классын байгуулагчийг дуудахад түрүүлж эцэг классын байгуулагч дуудагдах уу эсвэл удамшсан классын байгуулагч дуудагдах уу ? . Энийг сая интернетээс хайж судлаад ч ойлгосонгүй . Тайлбарлаад өгөх хүн байна уу ?"
                 votes="40"
-                comments="46">
+                comments="46"
+              >
               </question-card>
             </a>
           </div>
         </div>
         <aside class="side-layout">
-          <user-statistics
-          questions="69"
-          answers="34"
-          rank="1"
-          badges="2"
->        </user-statistics>
-           <leaderboard-section
-  gold="Ёндонжамц" gold-aura="2000099900"
-  silver="Билгүүн" silver-aura="26969"
-  bronze="Энгүүн" bronze-aura="1990"
-></leaderboard-section>
+          <user-statistics questions="69" answers="34" rank="1" badges="2">
+          </user-statistics>
+          <leaderboard-section
+            gold="Ёндонжамц"
+            gold-aura="2000099900"
+            silver="Билгүүн"
+            silver-aura="26969"
+            bronze="Энгүүн"
+            bronze-aura="1990"
+          ></leaderboard-section>
         </aside>
       </main>
     </div>
 
     <ask-question-modal></ask-question-modal>
-
   </body>
 </html>
